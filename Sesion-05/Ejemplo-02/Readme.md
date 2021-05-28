@@ -1,15 +1,15 @@
-## Inline functions
+# Ej. 02 - Inline functions
 
-### OBJETIVO
+## OBJETIVO
 
 - Aplicar el keyword inline para depurar espacio en memoria cuando se cree una función de orden superior
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Crear funciones que reciban funciones como parámetros
 
 
-#### DESARROLLO
+## DESARROLLO
 
 En el [Ejemplo 1](../Ejemplo-01) utilizamos lambdas y high order functions (HFO) para realizar distintas operaciones dependiendo de lo que se requiriera. las funciones de orden superior son un gran agente para la programación funcional porque controla el flujo de datos a traves funciones, recibiendo la indicada según sea el caso. Uno de los problemas que nos representa su uso, es que en términos de lenguaje Java, dicha función se vuelve un objeto, y se crea una instancia de este aunque la función no se haya invocado; esto gasta espacio en memoria que puede traducirse en realentización de tu aplicación. 
 
@@ -40,7 +40,7 @@ inlined {
 }
 ```
 
-, se crea un nuevo objeto de acuerdo al bytecode:
+Se crea un nuevo objeto de acuerdo al bytecode:
 
 ```java
 nonInlined(new Function() {
@@ -100,3 +100,8 @@ inline fun foo(inlined: () -> Unit, noinline notInlined: () -> Unit) { ... }
 
 * No utilizarlos en HOF muy grandes, ya que este alargaría más el bytecode por cada implementación del inline function.
 * Utilizarlos en funciones que no reciban funciones como parámetros no tiene ninguna ventaja.
+
+
+</br>
+
+[Siguiente](../Ejemplo-03)

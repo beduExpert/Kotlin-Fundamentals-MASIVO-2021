@@ -1,15 +1,15 @@
-## Reto final - Implementando Programación funcional
+# Reto final - Implementando Programación funcional
 
-### OBJETIVO
+## OBJETIVO
 - Aproximar nuestro proyecto a la programacion funcional
 - Evitar en lo posible el uso de estados mutables 
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Haber cumplido los retos de esta sesión
 2. Interpretar características y soluciones de problemas como flujo de datos.
 
-#### DESARROLLO
+## DESARROLLO
 
 Kotlin no es un lenguaje que implemente exclusivamente programación funcional. Por tanto, es bastante atinado utilizar lo mejor de dos mundos: POO y Programación funcional!
 
@@ -22,3 +22,8 @@ Aquí damos algunos consejos para empezar a implementar  conceptos de este parad
 2. Cada método de una clase puede ser una función de orden superior! si necesitas ejecutar código externo al de un método de una clase después de una operación, pasar una lambda podría ser tu opción.
 
 3. Evita utilizar el *keyword* ***var***, pues indica que la variable es mutable. Una variable mutable puede ser moificada de forma no deseada y por tanto puede producirnos errores. La inmutabilidad también aporta consistencia al estado de una aplicación.
+
+
+</br>
+
+[Siguiente](../Postwork)

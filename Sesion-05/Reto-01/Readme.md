@@ -1,14 +1,14 @@
-## Funciones literales y Funciones de orden superior
+# Reto 01 - Funciones literales y Funciones de orden superior
 
-### OBJETIVO 
+## OBJETIVO 
 
 -  Implementar funciones de orden superior usando funciones lambda.
 
-#### REQUISITOS 
+## REQUISITOS 
 
 1. Revisar a detalle el [Ejemplo 01](./Ejemplo-01)
 
-#### DESARROLLO
+## DESARROLLO
 
 1. Escribe una función normal que reciba el precio de un producto y un cupón promocional.
 
@@ -29,3 +29,7 @@
 
 4. Prueba la función con distintos cupones para validar tu código!
 
+
+</br>
+
+[Siguiente](../Ejemplo-02)

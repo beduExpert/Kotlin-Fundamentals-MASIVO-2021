@@ -1,16 +1,16 @@
 
-## Postwork
+# Postwork
 
-### OBJETIVO
+## OBJETIVO
 
 - Complementar la información de programación funcional 
 - Mostrar un soporte para la implementación de este paradigma en tu proyecto final
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Haber terminado todos los ejemplos y retos de esta [Sesión](../)
 
-#### DESARROLLO
+## DESARROLLO
 
 
 Muchas colecciones en Kotlin tienen funciones que implementan programación funcional. Daremos varios ejemplos:
@@ -24,9 +24,14 @@ Algunas aproximaciones a programación funcional podrían ser dados los siguient
 
 - También son un gran recurso las operaciones funcionales como filter, partition, map etc. Para generar filtros en caso de querer visualizar únicamente películas de cierto genero, o aplicar un descuento temporal a ciertos productos con la función map, etc.
 
-#### Recursos adicionales
+### Recursos adicionales
 Estos videos de preview son gratuitos, pero requieren inscripción, la parte gratuita explica únicamente conceptos, la versión de paga explica cómo se implementan en kotlin https://www.functionalhub.com/courses/take/introduction-functional-programming-kotlin/lessons/2222826-what-is-functional-programming. 
 
 No olvides echar un vistazo a este pequeñó tutorial de programación funcional oficial de Kotlin, que se enfoca en la migración desde Python. Aquí se explica un poco el concepto de funciones lambda o inline functions. https://kotlinlang.org/docs/tutorials/kotlin-for-py/functional-programming.html
 
 
+
+
+</br>
+
+[Regresar](../)

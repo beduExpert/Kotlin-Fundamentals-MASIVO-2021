@@ -1,16 +1,16 @@
  	
-## Operaciones funcionales
+# Reto 02 - Operaciones funcionales
 
-### OBJETIVO 
+## OBJETIVO 
 
 - Utilizar funciones de orden superior implementadas en estructuras de datos de Kotlin.
 - Poner en práctica principios de programación funcional básica.
 
-#### REQUISITOS 
+## REQUISITOS 
 
 1. Haber cursado el [Ejemplo 3](../Ejemplo-03)
 
-#### DESARROLLO
+## DESARROLLO
 
 Tenemos la siguiente lista de calificaciones
 
@@ -23,3 +23,8 @@ Con el anterior dato, realizar las siguientes tareas:
 2. Verificar mediante la función ***none*** que ningún alumno haya sacado una calificación menor a 4
 
 3. Subir puntos extra a cada calificación, tomando en cuenta que la calificación máxima es de 10. No olvidar el principio de inmutabiliddad.
+
+
+</br>
+
+[Siguiente](../Reto-final)
