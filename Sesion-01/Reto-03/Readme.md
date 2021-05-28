@@ -1,17 +1,17 @@
-## Operadores
+# Reto 03 - Operadores
 
-### OBJETIVO 
+## OBJETIVO 
 
 - Hacer uso de los operadores 
 
-#### REQUISITOS 
+## REQUISITOS 
 
 1. Haber cursado el [Ejemplo 4](../Ejemplo-04)
 
-#### DESARROLLO
+## DESARROLLO
 
 
-##### La ecuación de la pendiente se obtiene por la siguiente expresión:
+La ecuación de la pendiente se obtiene por la siguiente expresión:
 
 <img src="ecuacion-pendiente.jpeg" width="40%" />
 
@@ -27,7 +27,7 @@ val m=(y2-y1)/(x2-x1)
 	
 </details>
 
-##### Resolver el valor de la pendiente, tomanto en cuenta que 
+Resolver el valor de la pendiente, tomanto en cuenta que 
 
 P1(4,3), P2(-3,-2)
 
@@ -59,7 +59,7 @@ el resultado obtenido es
 </details>
 
 
-##### Del ejercicio anterior, responder: ¿Por qué el resultado obtenido difiere del resultado esperado?
+Del ejercicio anterior, responder: ¿Por qué el resultado obtenido difiere del resultado esperado?
 
 <details>
 
@@ -69,7 +69,7 @@ Por que la operación de Integers dan un como resultado otro Int, como el result
 	
 </details>
 
-##### Encontrar una solución para que se refleje el resultado
+Encontrar una solución para que se refleje el resultado
 
 
 <details>
@@ -87,3 +87,7 @@ Al detectar un Float, el resultado se vuelve flotante.
 	
 </details>
 
+
+</br>
+
+[Siguiente](../Ejemplo-04)

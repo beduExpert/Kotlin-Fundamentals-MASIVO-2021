@@ -1,18 +1,18 @@
-## Tipos de datos
+# Ej. 3 - Tipos de datos
 
-### OBJETIVO
+## OBJETIVO
 
 - Abstraer los conceptos de cada tipo de dato para interpretar sus aplicaciones.
 - Usar los diferentes tipos de datos disponibles en kotlin.
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Tener alguna idea de los tipos de datos básicos en un lenguaje de programación.
 
-#### DESARROLLO
+## DESARROLLO
 
 
-##### Declaración implícita
+### Declaración implícita
 La asignación de tipo de dato en la variable es automática dependiendo del dato. Vamos a imprimir el tipo de dato de cada valor implícito
 
 ```kotlin
@@ -30,7 +30,7 @@ en consola nos mostrará el tipo que se le asignó:
 > class kotlin.Int
 
 
-##### Declaración explícita
+### Declaración explícita
 Permite conocer el tipo de dato que va a almacenar la variable, sirve para fijar una variable con una base de tipo en una clase y lanzar un error al asignar mal un tipo de dato. 
 
 ```kotlin
@@ -56,74 +56,74 @@ Nuestro resultado es el siguiente:
 > class kotlin.String
 
 
-##### Clasificación de tipos
+### Clasificación de tipos
 
 Existen varios tipos de datos básicos que nos faciclita la SDK de kotlin, pero vamos a utilizar los siguientes:
 
 
-###### Números
+#### Números
 
 Representan números con diferentes rangos, se subclasifican por enteros y decimales.
 
-**Enteros:**
+- **Enteros:**
 
-Tipo | Tamaño (bits) | Valor mínimo | Valor máximo
------|---------------|--------------|-------------
-Byte | 8 | -128 | 127
-Short | 16 | -32768 | 32767
-Int | 32 | -2,147,483,648 (-2^31) | 2,147,483,647 (2^31 - 1)
-Long | 64 | -9,223,372,036,854,775,808 (-2^63) | 9,223,372,036,854,775,807 (2^63 - 1)
+  Tipo | Tamaño (bits) | Valor mínimo | Valor máximo
+  -----|---------------|--------------|-------------
+  Byte | 8 | -128 | 127
+  Short | 16 | -32768 | 32767
+  Int | 32 | -2,147,483,648 (-2^31) | 2,147,483,647 (2^31 - 1)
+  Long | 64 | -9,223,372,036,854,775,808 (-2^63) | 9,223,372,036,854,775,807 (2^63 - 1)
 
-**Decimales:**
+- **Decimales:**
 
-Tipo | Tamaño (bits) | Bits para la base | bits para el exponente | dígitos decimales
------|---------------|-------------------|------------------------|-------------------
-Float | 32 | 24 | 8 | 6-7
-Double | 64 | 53 | 11 | 15-16
+  Tipo | Tamaño (bits) | Bits para la base | bits para el exponente | dígitos decimales
+  -----|---------------|-------------------|------------------------|-------------------
+  Float | 32 | 24 | 8 | 6-7
+  Double | 64 | 53 | 11 | 15-16
 
 
-```kotlin
-// Números (Numbers)
-    val byte: Byte = 127 // 8 bits
-    val short: Short = 1234 // 16 bits
-    val int: Int = 324 // 32 bits
-    val long: Long = 1000000000000 // 64 bits
-```
+  ```kotlin
+  // Números (Numbers)
+      val byte: Byte = 127 // 8 bits
+      val short: Short = 1234 // 16 bits
+      val int: Int = 324 // 32 bits
+      val long: Long = 1000000000000 // 64 bits
+  ```
 
- Para declaración implicita, Kotlin infiere el tipo *Int* siempre y cuando el número dado no exceda el máximo valor permitido. También podemos declarar una variable a long con el caracter ***L*** en seguida del número.
+  Para declaración implicita, Kotlin infiere el tipo *Int* siempre y cuando el número dado no exceda el máximo valor permitido. También podemos declarar una variable a long con el caracter ***L*** en seguida del número.
+  
+  ```kotlin
+      var long = 27L //Long
+      println(long.javaClass.kotlin)
+  ```
+  
+  >class kotlin.Long
  
- ```kotlin
-     var long = 27L //Long
-     println(long.javaClass.kotlin)
- ```
- 
- >class kotlin.Long
- 
- **Constantes literales**
+- **Constantes literales**
  Se pueden escribir los números en su representación binaria y hexadecimal (no así en octal)
  
- ```kotlin
-    val hexadecimal = 0x0F
-    println(hexadecimal.javaClass.kotlin)
-    val binary = 0b00001011
-    println(binary.javaClass.kotlin)
- ```
- 
- Por su salida vemos que los tipos siguen siendo *Int*
- 
- > class kotlin.Int
- 
- > class kotlin.Int
- 
- Desde Kotlin 1.1, los números pueden ser separados con guiones bajos o *underscores* :
+  ```kotlin
+      val hexadecimal = 0x0F
+      println(hexadecimal.javaClass.kotlin)
+      val binary = 0b00001011
+      println(binary.javaClass.kotlin)
+  ```
+  
+  Por su salida vemos que los tipos siguen siendo *Int*
+  
+  > class kotlin.Int
+  
+  > class kotlin.Int
+  
+  Desde Kotlin 1.1, los números pueden ser separados con guiones bajos o *underscores* :
 
-```kotlin
-    val oneMillion = 1_000_000
-    println(oneMillion)
-```
->1000000
+  ```kotlin
+      val oneMillion = 1_000_000
+      println(oneMillion)
+  ```
+  >1000000
 
-##### Caracteres
+### Caracteres
 
 Se representan con el tipo *Char* y se declaran con comillas simpless ***'***
 
@@ -139,7 +139,7 @@ nuestro tipo de variable debe ser Char
 
 >A
 
-##### Booleanos
+### Booleanos
 
 Representan un valor positivo o negativo representados por ***true*** y ***false*** 
 
@@ -235,3 +235,6 @@ Se mostrará esto en consola
 
 
 
+</br>
+
+[Siguiente](../Reto-03)

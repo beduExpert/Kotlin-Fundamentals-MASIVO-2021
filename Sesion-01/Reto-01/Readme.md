@@ -1,15 +1,15 @@
-## Reto 01 - Primeros pasos
+# Reto 01 - Primeros pasos
 
-### OBJETIVO 
+## OBJETIVO 
 
 - Utilizar una alternativa online para testeo rápido.
 - Complementar el tema de impresión de pantallas.
 
-#### REQUISITOS 
+## REQUISITOS 
 
 1. Haber cursado el [Ejemplo 1](../Ejemplo-01)
 
-#### DESARROLLO
+## DESARROLLO
 
 En este ejercicio te vamos a enseñar una herramienta online para correr código kotlin en línea.
 Puedes ocupar este sitio para probar algún snippet que obtuviste de stackoverflow para comprobar que te sea útil o si estás en una máquina
@@ -29,3 +29,7 @@ después de correr el código, consultar la url que se generó, tendrás algo as
 [https://play.kotlinlang.org/#eyJ2ZXJzaW9uIjoiMS4zLjYxIiwicGxhdGZvcm0iOiJqYXZhIiwiYXJncyI6IiIsImpzQ29kZSI6IiIsIm5vbmVNYXJrZXJzIjp0cnVlLCJ0aGVtZSI6ImlkZWEiLCJjb2RlIjoiLyoqXG4gKiBZb3UgY2FuIGVkaXQsIHJ1biwgYW5kIHNoYXJlIHRoaXMgY29kZS4gXG4gKiBwbGF5LmtvdGxpbmxhbmcub3JnIFxuICovXG5cbmZ1biBtYWluKCkge1xuXG4gICAgcHJpbnRsbihcIkhlbGxvIHdvcmxkXCIpXG59In0=]()
 
 copiar el texto después del primer **#** y pégalo en el campo encoded de [este sitio](https://jwt.io/) y observa el JSON decodificado de la derecha, ¡El campo code es nuestro código! nosotros enviamos el código por un JSON, ellos lo procesan y nos devuelven la información!
+
+</br>
+
+[Siguiente](../Ejemplo-02)

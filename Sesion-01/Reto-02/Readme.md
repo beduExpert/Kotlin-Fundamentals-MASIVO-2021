@@ -1,16 +1,16 @@
-## Variables y tipos de datos
+# Reto 02 - Variables y tipos de datos
 
-### OBJETIVO 
+## OBJETIVO 
 
 - Comprobar ciertos tipos de datos asignados por defecto
 
-#### REQUISITOS 
+## REQUISITOS 
 
 1. Haber terminado el [Ejemplo 2](../Ejemplo-02) y [Ejemplo 3](../Ejemplo-03)
 
-#### DESARROLLO
+## DESARROLLO
 
-##### Para un número decimal, qué tipo de dato se asigna por defecto? Imprimirlo
+Para un número decimal, qué tipo de dato se asigna por defecto? Imprimirlo
 
 <details>
 
@@ -29,7 +29,9 @@ el resultado debe dar
 
 </details>
 
-##### Volver flotante a la variable *decimal* 
+</br>
+
+Volver flotante a la variable *decimal* 
 
 <details>
 
@@ -53,7 +55,7 @@ el resultado debe dar
 
 </details>
 
-##### Declarar una variable *const val* con el valor de PI y multiplicarla por 2 veces nuestra variable *decimal* para sacar el perímetro de un círculo
+Declarar una variable *const val* con el valor de PI y multiplicarla por 2 veces nuestra variable *decimal* para sacar el perímetro de un círculo
 
 Para multiplicar adelantaremos el uso del operador de multiplicación  * y su uso es así:
 
@@ -80,7 +82,7 @@ fun main() {
 
 </details>
 
-##### para el ejemplo anterior, utilizar un *String Template* para imprimir el texto *El perímetro del círculo es: [resultado]* siendo resultado nuestra variable perímetro
+para el ejemplo anterior, utilizar un *String Template* para imprimir el texto *El perímetro del círculo es: [resultado]* siendo resultado nuestra variable perímetro
 
 
 
@@ -101,3 +103,6 @@ fun main() {
 </details>
 
 
+</br>
+
+[Siguiente](../Ejemplo-03)

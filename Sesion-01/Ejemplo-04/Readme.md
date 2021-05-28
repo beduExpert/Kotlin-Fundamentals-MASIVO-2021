@@ -1,23 +1,23 @@
-## Operadores
+# Ej. 4 - Operadores
 
-### OBJETIVO
+## OBJETIVO
 
 - Diseñar algoritmos que impliquen operaciones.
 - Representar operaciones por medio de variables y operadores.
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Conocer aritmética básica :innocent:
 2. Tener una breve idea de álgebra booleana.
 
-#### DESARROLLO
+## DESARROLLO
 
 Veremos a continuación diferentes tipos de operadores para realizar operaciones aritméticas, comparaciones, etc.
 
 Como se mencionó anteriormente, todas las variables en kotlin son objetos. Por eso, tendremos accesos a métodos especiales dependiendo de su tipo de dato.
 Abordaremos entonces las operaciones y sus equivalentes en método.
 
-##### Aritméticos binarios
+### Aritméticos binarios
 
 Expresión | Método
 ----------|--------
@@ -92,7 +92,7 @@ a-- | a.dec()
 
 
 
-##### Asignaciones aumentadas
+### Asignaciones aumentadas
 
 
 Expresion | Método
@@ -133,7 +133,7 @@ Los resultados sdeben ser:
 
 >3
 
-###### Operadores de igualdad
+### Operadores de igualdad
 
 El resultado de una operación de igualdad devuelve un booleano, indicadando la vericidad de la expresión.
 
@@ -158,7 +158,7 @@ Ejemplificamos su utilización en kotlin:
 
 >d es distinto de a? true
 
-##### Operaciones relacionales
+### Operaciones relacionales
 
 El resultado devuelve un booleano, indicando la veracidad de la comparación.
 
@@ -181,6 +181,9 @@ println( c <= e)  // 23 <= 5 es falso
 
 
 
+</br>
+
+[Siguiente](../Reto-final)
 
 
 

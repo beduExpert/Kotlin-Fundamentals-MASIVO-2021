@@ -1,4 +1,4 @@
-## Declaración de variables
+# Ej. 2 - Declaración de variables
 
 ### OBJETIVO
 
@@ -97,3 +97,7 @@ mostrando en consola:
 >7
 
 >24
+
+</br>
+
+[Siguiente](../Reto-02)

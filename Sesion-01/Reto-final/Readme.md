@@ -1,20 +1,20 @@
-## Reto final - Inicialización de proyecto 
+# Reto final - Inicialización de proyecto 
 
-### OBJETIVO
+## OBJETIVO
 
 - Definir el proyecto con el que trabajaremos todo el curso.
 - Interpretar los lineamientos que integra el proyecto.
 - Programar la idea básica de nuestra aplicación.
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Abstraer el concepto de ciclos y condicionales
 2. Manejar de forma básica el IDE 
 3. Aplicar variables y realizar operaciones sobre ellas
 
-#### DESARROLLO
+## DESARROLLO
 
-##### cómo definir el proyecto
+### Cómo definir el proyecto
 
 En esta primera parte del curso, debemos definir un proyecto con el que trabajemos las 8 sesiones. Este proyecto va ir tomando mayor complejidad conforme se vaya avanzando en nuevos temas, obteniendo herramientas que nos permitan realizar nuevas funcionalidades.
 
@@ -28,7 +28,7 @@ Para poder elegir el proyecto adecuado, hay que considerar ciertos factores:
 
 Algunos de los ejemplos podrían ser una lista de cosas por hacer, una aplicación de compra de productos en línea, un reproductor de audio, un catálogo de películas como IMDb, una agencia de viajes etc.
 
-##### lineamientos para comenzar el proyecto
+### lineamientos para comenzar el proyecto
 
 - Aconsejamos no definir una idea muy compleja del proyecto, puesto a que su propósito es meramente didáctico.
 - La estructura del código irá tomando forma a lo largo del proyecto.
@@ -59,7 +59,7 @@ val reader = Scanner(System.`in`)
 var age:Int = reader.nextInt()
 ```
 
-##### Interfaz gráfica
+### Interfaz gráfica
 
 Si un equipo opta por desarrollar una interfaz gráfica mínima para el proyecto, existen algunas librerías que hacen el trabajo. En este curso no se cubrirá este tema y se advierte que desarrollar una, implica inversión extra de tiempo, pero existe libertad para esto. Existe un framework llamado TornadoFX que es una adaptación de JavaX para Kotlin.
 
@@ -69,3 +69,6 @@ consulta la documentación para la integración si así se requiere.
 
 
 
+</br>
+
+[Siguiente](../Postwork)
