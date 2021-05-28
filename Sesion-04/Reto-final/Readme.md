@@ -1,17 +1,17 @@
-## Reto final
+# Reto final
 
-### OBJETIVO
+## OBJETIVO
 
 - Orientar el proyecto a un diseño apegado a POO
 - Dimensionar las posibilidades de integración de los temas vistos en la sesión al proyecto.
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Saber definir los conceptos polimorfismo, herencia y encapsulamiento.
 2. Aplicar los conceptos anteriores.
 3. Terminar los ejercicios de la [Sesión](../)
 
-#### DESARROLLO
+## DESARROLLO
 
 En este reto rediseñaremos algunas clases previamente definidas, crear nuevas para complementar nuestro proyecto e implementar nuevos concepto en general.
 
@@ -22,3 +22,8 @@ En este reto rediseñaremos algunas clases previamente definidas, crear nuevas p
 * Las clases previamente definidas para el proyecto que tengan como objetivo único almacenar información pueden ser reemplazados por *Data classes*, e incluso crear nuevas. Una aplicación de pago de parquímetros utiliza la clase Vehículo para consultar los datos de tu coche, para crearlos, para editarlos y para eliminarlos, por lo que podríamos modelarlo con una Data class.
 
 * Podríamos tener la necesidad de almacenar los tipos de colores disponibles en concreto para una tienda de zapatos, y guardarlos en varias variables o en un arreglo dentro de un companion object para que tengamos acceso a los colores disponibles y asignarlo a un objeto zapato().
+
+
+</br>
+
+[Siguiente](../Postwork)

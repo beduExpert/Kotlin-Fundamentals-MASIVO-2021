@@ -1,17 +1,17 @@
-## Postwork
+# Postwork
 
-### OBJETIVO
+## OBJETIVO
 
 - Implementar abstracciones de clases a nuestro proyecto para organizar mejor 
 - Utilizar los Data Class para almacenar datos 
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Saber definir los conceptos polimorfismo, herencia y encapsulamiento.
 2. Aplicar los conceptos anteriores.
 3. Terminar los ejercicios de la [Sesión](../Sesión-04)
 
-#### DESARROLLO
+## DESARROLLO
 
 La herencia es un tema fundamental en la Programación orientada a objetos, ya que permite mantener un orden y control sobre la relación de clases emparentadas. Por ejemplo, en el [Postwork de la sesión previa](../Sesión-03/Postwork) ejemplificábamos con una tienda de celulares en línea, el problema es que esta tienda se limita a este producto, y para poder vender productos en general, tendríamos que abarcar más objetos; pero como el concepto producto es muy abstracto, es muy general. Tenemos qué crearle una clase abstracta.
 
@@ -73,3 +73,7 @@ data class TimeLocation
      val long: Double)
 ```
 
+
+</br>
+
+[Regresar](../)

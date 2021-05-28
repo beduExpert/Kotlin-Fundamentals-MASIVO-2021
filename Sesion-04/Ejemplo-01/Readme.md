@@ -1,17 +1,17 @@
-## Herencia y polimorfismo
+# Ej. 01 - Herencia y polimorfismo
 
-### OBJETIVO
+## OBJETIVO
 
 - Definir clases base que generalicen las propiedades y el comportamiento de una jerarquía
 - Heredar y redefinir miembros de una clase padre.
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Leer el prework de esta sesión para formarse una idea de lo que implican estos conceptos.
 
-#### DESARROLLO
+## DESARROLLO
 
-##### Herencia
+### Herencia
 
 Esta es una propiedad de la Programación Orientada a Objetos que permite la creación de clases "hijo" o subclases a partir de una clase "padre" o superclase, esta superclase hereda los atributos y métodos que estén permitidos por encapsulamiento (dependiendo del modificador de acceso asignado a cada propiedad) a sus subclases. Pueden existir varias subclases de una superclase, pero no una subclase con varias superclases.
 
@@ -64,8 +64,6 @@ y vamos a probar que la clase funciones como lo esperado, vamos a crear un enemi
 El código respondió como se esperaba. Esta es una clase base para determinar a los enemigos de mario, para enumerar dos tenemos a los siguientes:
 
 * Koopa: tortugas que al ser aplastadas, se vuelven caparazón. <img src="imgs/koopa.png" width= "15%"/>
-
-	-
 	
 * Goomba: se mueren al ser aplastados. <img src="imgs/goomba.png" width= "15%"/>
 
@@ -102,8 +100,8 @@ Si damos click izquierdo sobre el error, y posteriormente pulas *option + enter*
 Al dar click sobre esa función, veremos que a enemy se le asigna un modificador ***open***. Dicho modificador, otorga la facultad a una clase de poder heredar o de un método a ser sobreescrito.
 
 ```kotlin
-	open class Enemy(val name: String, val strength:Int) :Any(){
-	...
+open class Enemy(val name: String, val strength:Int) :Any(){
+...
 ```
 
 Regresando a nuestra clase *Goomba*, podremos notar que existe ahora otro error marcado entre los paréntesis de la superclase: 
@@ -215,9 +213,9 @@ pero al correr el código, no sucede nada ¿Por qué? al sobreescribir el métod
 
 ```kotlin
 override fun collision(collider: String){
-        super.collision(collider)
-        println("Usando la colisión de la clase Enemy")
-    }
+    super.collision(collider)
+    println("Usando la colisión de la clase Enemy")
+}
 ```
 
 al correr el código, debe imprimirse lo siguiente:
@@ -230,14 +228,14 @@ Como para Koopa este no es el caso, modificaremos totalmente el comportamiento p
 
 ```kotlin
 override fun collision(collider: String){
-        when(collider){
-            "Weapon" -> {
-                state = "Shell"
-                println("El estado es ahora $state")
-            } 
-            "Enemy" -> changeDirection()
-        }
+    when(collider){
+        "Weapon" -> {
+            state = "Shell"
+            println("El estado es ahora $state")
+        } 
+        "Enemy" -> changeDirection()
     }
+}
 ```
 
 > El estado es ahora Shell
@@ -245,6 +243,9 @@ override fun collision(collider: String){
 
 
 
+</br>
+
+[Siguiente](../Reto-01)
 
 
 

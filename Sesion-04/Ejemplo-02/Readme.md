@@ -1,18 +1,18 @@
-## Clases abstractas e interfaces
+# Ej. 02 - Clases abstractas e interfaces
 
-### OBJETIVO
+## OBJETIVO
 
 - Programar una clase abstracta como unas base no instanciable de otras clases
 - Sintetizar el significado de interfaces en kotlin y conocer los casos de uso
 - Diferenciar entre estas dos por medio de la distinción de sus características y aplicaciones
 
-#### REQUISITOS
+## REQUISITOS
 
-1. Haber creado clases que hereden de otras.
+- Haber creado clases que hereden de otras.
 
-#### DESARROLLO
+## DESARROLLO
 
-##### Clases abstractas
+### Clases abstractas
 
 Una abstracción es la separación, a nivel conceptual, de las propiedades de algo y definirlos a través del pensamiento, aislándolos del mundo sensible. Teniendo en cuenta esto, una clase abstracta permite crear una clase que su objetivo sea definitorio, por lo tanto, las clases abstractas no pueden ser instanciadas.
 
@@ -43,7 +43,7 @@ class Travel {
     protected var reserved = false
     protected var paidAmount = 0
 
-   fun reserve(numDays: Int){
+    fun reserve(numDays: Int){
         if(reserved){
             println("""¡Ya reservaste tu viaje! 
                        País: $country
@@ -182,7 +182,7 @@ Ahora hacemos el mismo experimento para Monclova:
 > Lo sentimos, no hacemos viajes a esta ciudad
 
 
-##### Interfaces
+### Interfaces
 
 Una interfaz podría parecer a simple vista una clase abstracta, ¡ pero no la es!
 
@@ -255,6 +255,9 @@ Que es el precio con el descuento del 10% ($1440).
 
 
 
+</br>
+
+[Siguiente](../Reto-02)
 
 
 

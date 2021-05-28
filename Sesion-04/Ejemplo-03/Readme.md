@@ -1,18 +1,18 @@
-## Data class y Companion object
+# Ej. 03 Data class y Companion object
 
-### OBJETIVO
+## OBJETIVO
 
 - Definir clases para mantener una estructura de datos
 - Crear un miembro propio de una clase y no de un objeto
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Mantener datos en una clase
 2. Requerir la inicialización de una variable constante 
 
-#### DESARROLLO
+## DESARROLLO
 
-##### Data class
+### Data class
 
 Un Data class es una clase que tiene como único objetivo es cargar información en una clase a través de su constructor, sin poder definir métodos para modificar o eliminar sus datos.
 
@@ -27,10 +27,10 @@ data class Movie(
 Anteriormente declaramos una clase de datos de una película. Vamos a crear la primera clase de datos, que guardará datos de la película *Scary movie*.
 
 ```kotlin
-    //declaración
-    val scaryMovie = Movie("Scary movie", "Comedia", 88.27)
-    //impresión
-    println(scaryMovie)
+//declaración
+val scaryMovie = Movie("Scary movie", "Comedia", 88.27)
+//impresión
+println(scaryMovie)
 ```
 
 la impresión de una data class se ve así:
@@ -41,7 +41,7 @@ Si queremos obtener la propiedad de un objeto en pesona:
 
 ```kotlin
 //imprimir una propiedad en específico
-    println(scaryMovie.name)
+println(scaryMovie.name)
 ```
 
 **Declaraciones en el cuerpo**
@@ -92,9 +92,9 @@ que corresponde al campo *gender*, o sea, el segundo parámetro en el constructo
 Estas funciones hacen posible la desestructuración de un objeto en sus variables:
 
 ```kotlin
-    //Desestructuración
-    val (name,gender,duration) = scaryMovie
-    println("la duración de la película es de $duration minutos")
+//Desestructuración
+val (name,gender,duration) = scaryMovie
+println("la duración de la película es de $duration minutos")
 ```
 
 el resultado de consola es: 
@@ -114,11 +114,11 @@ si no necesitáramos duration, podríamos omitirlo de la declaracción puesto qu
 La función ***Copy()*** se utiliza para generar una copia del objeto y asignarla a una variable. Se utiliza para cuando deseamos mutar  algunas de sus propiedades, pero mantener el original intacto. Vamos a crear la película scary movie 2 basándonos en la primera:
 
 ```kotlin
-    val scaryMovie2= scaryMovie.copy(name="Scary movie 2",duration=83.0)
-    println("""
-        Scary movie: $scaryMovie
-        Scary movie 2: $scaryMovie2
-    """.trimIndent())
+val scaryMovie2= scaryMovie.copy(name="Scary movie 2",duration=83.0)
+println("""
+    Scary movie: $scaryMovie
+    Scary movie 2: $scaryMovie2
+""".trimIndent())
 ```
 
 El resultado es:
@@ -137,7 +137,7 @@ println("fecha de creación de ${scaryMovie2.name}: ${scaryMovie2.createdAt}")
 Aunque Scary movie 1 ya tenía seteado su fecha, la 2 no copió dicho valor.
 
 
-##### Companion objects
+### Companion objects
 
 En lenguajes de programación como java existe un modificador de acceso llamado static este modificador nos permite crear objetos, variables o métodos en una clase para utilizarlos sin necesidad de hacer una instancia de la clase. En kotlin, este modificador no existe, sin embargo, existe un tipo de objeto llamado ***companion object*** que cumple con dicha función. Sus características son las siguientes:
 
@@ -149,21 +149,26 @@ En lenguajes de programación como java existe un modificador de acceso llamado 
 Ejemplo:
 
 ```kotlin
-    class Vehicle {
-    
-    init{
-        println("Vehículo creado")
+class Vehicle {
+
+init{
+    println("Vehículo creado")
+}
+    companion object Factory {
+        fun create(): Vehicle = Vehicle()
     }
-        companion object Factory {
-            fun create(): Vehicle = Vehicle()
-        }
-    }
+}
 ```
 
 En el ejemplo podemos ver que nuestra clase vehicle tiene dentro un companion object que se encarga de crear instancias de la clase vehicle, los métodos de un companion object pueden llamarse haciendo referencia al nombre de la case sin paréntesis y con punto:
 
 ```kotlin
-    val vehicleInstance = Vehicle.create()
+val vehicleInstance = Vehicle.create()
 ```
 
 > Vehículo creado
+
+
+</br>
+
+[Siguiente](../Reto-final)
