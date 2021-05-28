@@ -63,6 +63,8 @@ Abora vamos a integrarle métodos, que representan accciones que pueden ser llev
 ```kotlin
 class Phone{
 
+    var isOn = false
+
     //métodos
     fun turnOn(){
         isOn = true

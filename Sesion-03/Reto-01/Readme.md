@@ -22,6 +22,8 @@
     * Apagar
     * Recargar
 
+    </br>
+
     <details>
         <summary>Solución</summary>
         
@@ -59,6 +61,8 @@
     * marca
     * modelo
     * placas
+
+    </br>
 
     <details>
         <summary>Solución</summary>

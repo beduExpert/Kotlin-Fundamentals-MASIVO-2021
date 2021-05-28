@@ -213,6 +213,12 @@ set(value){
 }
 ```
 
+```kotlin
+private fun gameOver(){
+    println("JUEGO TERMINADO")
+}
+```
+
 La función *die()* ahora no es inutil, por lo tanto la eliminamos y al colisionar con un *Goomba*, pondremos directamente:
 
 ```kotlin

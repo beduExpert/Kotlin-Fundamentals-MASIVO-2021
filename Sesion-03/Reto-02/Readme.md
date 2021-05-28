@@ -17,6 +17,8 @@
     * Sexo
     * Altura
 
+    </br>
+
     <details>
         <summary>Solución</summary>
 
