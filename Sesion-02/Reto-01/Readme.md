@@ -17,7 +17,7 @@
 
 
     <details>
-        <summary>Solucion</summary>
+        <summary>Solución</summary>
         
     - Respuesta a 1)
         ```kotlin
@@ -83,7 +83,7 @@
 4. Con el ejemplo anterior, crear una función que entregue el promedio de tres calificaciones. Esta debe recibir dos parámetros con calificaciones por defecto 8, y el tercer parámetro no debe venir predefinido. 
 
     <details>
-        <summary>Solucion</summary>
+        <summary>Solución</summary>
         
     ```kotlin
     fun promedio(primera: Float = 8f,
@@ -99,7 +99,7 @@
 5. Utilizar la función *promedio*, Comentar qué pasa si se ingresa sólo una calificación en la función y después con dos. Finalmente, buscar que la función corra enviando únicamente la tercera calificación con 10f:
 
     <details>
-        <summary>Solucion</summary>
+        <summary>Solución</summary>
         
     ```kotlin
     val promedio = promedio(tercera = 10f)

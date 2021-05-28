@@ -18,7 +18,7 @@
 * El scooter cuesta $2400 y el servidor tarda 2 segundos en obtener el precio
 
 <details>
-	<summary>solucion</summary>
+	<summary>Solución</summary>
 	
 ```kotlin
 suspend fun getScooterPrice():Long{
@@ -39,7 +39,7 @@ suspend fun getPs4Price():Long{
 2. Obtener el precio del scooter en la función main() e imprimirlo en pantalla
 
 <details>
-	<summary>solucion</summary>
+	<summary>Solución</summary>
 	
 ```kotlin
   runBlocking{
@@ -55,7 +55,7 @@ suspend fun getPs4Price():Long{
 
 
 <details>
-	<summary>solucion</summary>
+	<summary>Solución</summary>
 	
 ```kotlin
 runBlocking {
@@ -72,7 +72,7 @@ runBlocking {
 4. Existe una forma de obtener resultados de forma asíncrona. el método ***async*** lanza una corrutina, como *launch*, la diferencia es que, en vez de regresar un Job, regresa un Deferred (un objeto que representa una promesa de retornar un resultado en algún momento). en el Deferred, viene un método ***await()*** que devuelve el resultado. Con esta información, obtener el valor de los dos productos de forma asíncrona para luego sumarlos e imprimirlos en pantalla.
 
 <details>
-	<summary>solucion</summary>
+	<summary>Solución</summary>
 	
 ```kotlin
 runBlocking {

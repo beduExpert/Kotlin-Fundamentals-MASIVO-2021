@@ -69,7 +69,7 @@ class Mario(var vidas: Int =3){ //vamos a dejar setear el número de vidas al in
     //resta una vida al jugador
     private fun die(){
         lives--
-        println("Haz perdido una vida!")
+        println("Has perdido una vida!")
     }
 
     //el modificador public es redundante
@@ -109,7 +109,7 @@ Ahora, agregamos otra colisión con un *Goomba*:
 mario.collision("Goomba")
 ```
 
-> Haz perdido una vida!
+> Has perdido una vida!
 
 ### Getters y setters
 
@@ -125,11 +125,11 @@ En el ejemplo de Mario tenemos un ejemplo de un setter:
 ```kotlin
 private fun die(){
     lives--
-    println("Haz perdido una vida!")
+    println("Has perdido una vida!")
 }
 ```
 
-Con eso deducimos que un setter no sólo da acceso a una variable, sino que restringe la forma en la que se puede modificar y cualquier otro paso adicional (en este caso, imprimir el mensaje "Haz perdido una vida").
+Con eso deducimos que un setter no sólo da acceso a una variable, sino que restringe la forma en la que se puede modificar y cualquier otro paso adicional (en este caso, imprimir el mensaje "Has perdido una vida").
 
 si queremos saber el número de vidas necesitaremos crear un *Getter*:
 
@@ -177,23 +177,23 @@ for(i in 1..5){ //matando a mario 5 veces
 
 ejecutamos ese código y tendremos este resultado:
 
-> Haz perdido una vida!
+> Has perdido una vida!
 
 > Te quedan 2 vidas
 
-> Haz perdido una vida!
+> Has perdido una vida!
 
 > Te quedan 1 vidas
 
-> Haz perdido una vida!
+> Has perdido una vida!
 
 > Te quedan 0 vidas
 
-> Haz perdido una vida!
+> Has perdido una vida!
 
 > Te quedan -1 vidas
 
-> Haz perdido una vida!
+> Has perdido una vida!
 
 > Te quedan -2 vidas
 

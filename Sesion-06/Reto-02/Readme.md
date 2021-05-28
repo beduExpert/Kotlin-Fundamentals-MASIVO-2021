@@ -24,7 +24,7 @@ Y los siguientes métodos:
 	getModel()
 	
 <details>
-	<summary>Solucion</summary>
+	<summary>Solución</summary>
 	
 ```java
 public class SmartPhone {
@@ -60,7 +60,7 @@ public class SmartPhone {
 un elemento al stock. Agregar un getter estático para stock.
 
 <details>
-	<summary>Solucion</summary>
+	<summary>Solución</summary>
 	
 ```java
     protected static int stock = 0;
@@ -84,7 +84,7 @@ un elemento al stock. Agregar un getter estático para stock.
 
 
 <details>
-	<summary>Solucion</summary>
+	<summary>Solución</summary>
 	
 ```kotlin
 val iPhone = SmartPhone(
@@ -103,7 +103,7 @@ val iPhone = SmartPhone(
 4. Hacer un restock de 10 elementos, remover dos smartphones del stock, imprimir el stock, resurtir 5 elementos y volver imprimir el stock.
 
 <details>
-	<summary>Solucion</summary>
+	<summary>Solución</summary>
 	
 ```kotlin
     SmartPhone.restock(10)

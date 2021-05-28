@@ -16,7 +16,7 @@ Se proponen dos ejercicios:
 1. Crear una función que divida dos Int, si el divisor es 0, habrá un error: utilizar try-catch como expresión para regresar un valor y en caso de error, regresar 0.
 
 <details>
-	<summary>Solucion</summary>
+	<summary>Solución</summary>
 	
 ```kotlin
 fun divide(num1:Int,num2:Int): Int{
@@ -42,7 +42,7 @@ println(divide(10,2))
 - Asigna el valor del nombre de la instancia de persona que acabas de crear a una variable usando el operador Elvis, si es nulo el nombre lanza una excepción pero por medio de una función, usando el tipo Nothing (Crea la función que retorne Nothing).
 
 <details>
-	<summary>Solucion</summary>
+	<summary>Solución</summary>
 	
 Nuestra clase
 
