@@ -1,24 +1,24 @@
-## Casts
+# Ejemplo 03 - Casts
 
-### OBJETIVO
+## OBJETIVO
 
 - Utilizar los distintos tipos de modificación de tipo de datos de un valor en kotlin 
 - Lidiar con los errores en el casting
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Haber leído los ejercicios 1 y 2 de esta unidad
 
-#### DESARROLLO
+## DESARROLLO
 
 ### Smart Casts y operador is
 
 El operador ***is*** permite saber si una variable tiene un tipo de dato asignado o no.
 
 ```kotlin
-    if (obj !is String) { 
-        println("Not es una String")
-    }
+if (obj !is String) { 
+    println("Not es una String")
+}
 ```
 
 si el objeto no es una String, se informa;.
@@ -71,3 +71,7 @@ println(str)
 
 
 
+
+</br>
+
+[Siguiente](../Reto-Final)

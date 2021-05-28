@@ -1,14 +1,14 @@
-## Ejemplo 2: Exceptions y Manejo de errores
+# Ejemplo 02 - Exceptions y Manejo de errores
 
-### OBJETIVO
+## OBJETIVO
 
 - Desarrollar la habilidad de prever y hacer correctamente el manejo de posibles errores en los programas.
 
-### REQUISITOS
+## REQUISITOS
 
 1. Conocimiento previo de Excepciones
 
-### DESARROLLO
+## DESARROLLO
 
 En kotlin, como en cualquier otro lenguage de programación, siempre existe la posibilidad de que se den errores, los cuales no podemos controlar. Aquí es donde nace el tema de las excepciones, estas nos permiten hacer "algo" en caso de que algun error ocurra realizando determinadas operaciones.
 
@@ -17,13 +17,13 @@ Todas las clases de excepción en kotlin heredan de la clase Throwable. Cada exc
 >Para lanzar una excepción:
 
 ```kotlin
-	throw Exception("Excepción genérica")
+throw Exception("Excepción genérica")
 ```
 
 Por supuesto, Kotlin tiene una lista extensa de errores para arrojar. Haciendo referencia al [Reto 1](../Reto-01), encontramos esta excepción
 
 ```kotlin
-	throw IllegalArgumentException("Necesitas apellidos")
+throw IllegalArgumentException("Necesitas apellidos")
 ```
 
 la forma más común de manejar errores es usando el bloque **try-catch**. La clase String contiene un método ***toInt()*** para convertir strings a enteros, siempre y cuando la String sea numérica.
@@ -45,14 +45,12 @@ Utilizamos ahora try-catch para manejar la posibilidad de tener un error:
 
 ```kotlin
 try {
-        val v = "bedu.org"
-        v.toInt()
-    } catch(e:Exception) {
-        println("No se pudo convertir, hubo un error: $e")
-
-    } finally {
-        println("Proceso terminado")
-    }
+    val v = "bedu.org"
+    v.toInt()
+} catch(e:Exception) {
+    println("No se pudo convertir, hubo un error: $e")
+} finally {
+    println("Proceso terminado")
 }
 ```
 
@@ -83,20 +81,18 @@ El bloque también puede cachar distintas excepciones, en este ejemplo agregarem
 
 ```kotlin
 try {
-        val v = "bedu.org"
-        v.toInt()
-        val divider = 0
-        val a = 3/divider //comentar para reproducir el primer error
-
-    } catch(e:NumberFormatException) {
-        println("No se puede convertir este tipo a numerico:")
-        e.printStackTrace()
-
-    }catch(e:Exception){
-        println("No se pudo convertir, hubo un error: $e")
-    } finally {
-        println("Proceso terminado")
-    }
+    val v = "bedu.org"
+    v.toInt()
+    val divider = 0
+    val a = 3/divider //comentar para reproducir el primer error
+} catch(e:NumberFormatException) {
+    println("No se puede convertir este tipo a numerico:")
+    e.printStackTrace()
+}catch(e:Exception){
+    println("No se pudo convertir, hubo un error: $e")
+} finally {
+    println("Proceso terminado")
+}
 ```
 
 
@@ -132,12 +128,12 @@ Tenemos 5 camisas en el stock, y un cliente quiere reservar 7 para un evento. la
 
 ```kotlin
  //vamos a intentar comprar 7 camisas
-        val shirtsToRent = 7
-        val end = shirtsToRent -1
+val shirtsToRent = 7
+val end = shirtsToRent -1
 
-        for(i in 0..end ){
-            stock[i].reserve()
-        }
+for(i in 0..end ){
+    stock[i].reserve()
+}
 ```
 Si corremos este ejemplo, nos va a salir el siguiente error:
 
@@ -148,30 +144,30 @@ por lo tanto, tendremos que usar un try-catch que, en caso de error, quitemos la
 ```kotlin
 val stock = listOf(Shirt(),Shirt(),Shirt(),Shirt(),Shirt())
 
-    try {
-        //vamos a intentar comprar 7 camisas
-        val shirtsToRent = 7
-        val end = shirtsToRent -1
+try {
+    //vamos a intentar comprar 7 camisas
+    val shirtsToRent = 7
+    val end = shirtsToRent -1
 
-        for(i in 0..end ){
-            stock[i].reserve()
-        }
-
-    } catch(e:ArrayIndexOutOfBoundsException) {
-        println("No hay suficientes camisas en stock, por favor disminuye la cantidad")
-
-        stock.forEach {
-            it.unreserve()
-        }
-
-    } finally {
-        println("Gracias por su preferencia")
+    for(i in 0..end ){
+        stock[i].reserve()
     }
+
+} catch(e:ArrayIndexOutOfBoundsException) {
+    println("No hay suficientes camisas en stock, por favor disminuye la cantidad")
+
+    stock.forEach {
+        it.unreserve()
+    }
+
+} finally {
+    println("Gracias por su preferencia")
+}
 ```
 
 
 
-#### The nothing type
+### The nothing type
 
 Ya que throw es una expresión se puede usar por supuesto en una operación Elvis.
 
@@ -184,9 +180,9 @@ Vemos que intentamos asignar el nombre de la persona a la variable **s**, con el
 El tipo de la expresión throw es el tipo especial Nothing. Este tipo no tiene valores y se usa para marcar ubicaciones de código que nunca se pueden alcanzar. En su propio código, puede usar Nothing para marcar una función que nunca regresa:
 
 ```kotlin
-	fun fail(message: String): Nothing {
-		throw IllegalArgumentException(message)
-	}
+fun fail(message: String): Nothing {
+    throw IllegalArgumentException(message)
+}
 ```
 
 Cuando usamos el tipo Nothing, estamos básicamente indicando que la función no va a regresar nada, en este caso nuestra función se encarga solamente de lanzar una excepción.
@@ -194,7 +190,12 @@ Cuando usamos el tipo Nothing, estamos básicamente indicando que la función no
 Cuando llames a esta función, el compilador sabrá que la ejecución no continúa más allá de la llamada:
 
 ```kotlin
-	val s = person.name ?: fail("Name required")
+val s = person.name ?: fail("Name required")
 ```
 
-Ahora vemos que de esta forma, con ayuda del tipo Nothing, combinándolo con el uso de Elvis, podemos mejorar nuestro código para lanzar excepciones, completa el [Reto 02](/../../tree/master/Sesion-07/Reto-02/) y pon en práctica lo que acabas de aprender.
+Ahora vemos que de esta forma, con ayuda del tipo Nothing, combinándolo con el uso de Elvis, podemos mejorar nuestro código para lanzar excepciones, completa el [Reto 02](../Reto-02/) y pon en práctica lo que acabas de aprender.
+
+
+</br>
+
+[Siguiente](../Reto-02)
