@@ -1,4 +1,4 @@
-# Ej. 3 - Tipos de datos
+# Ej. 03 - Tipos de datos
 
 ## OBJETIVO
 

@@ -19,7 +19,7 @@ Expresarla ahora con operadores:
 
 <details>
 
-<summary>Respuesta</summary
+<summary>Solución</summary
 	
 ```kotlin
 val m=(y2-y1)/(x2-x1) 
@@ -34,7 +34,7 @@ P1(4,3), P2(-3,-2)
 
 <details>
 
-<summary>Respuesta</summary
+<summary>Solución</summary
 	
 El resultado esperado sería:
 
@@ -63,7 +63,7 @@ Del ejercicio anterior, responder: ¿Por qué el resultado obtenido difiere del 
 
 <details>
 
-<summary>Respuesta</summary>
+<summary>Solución</summary>
 	
 Por que la operación de Integers dan un como resultado otro Int, como el resultado es decimal, se redondea a 0.
 	
@@ -74,7 +74,7 @@ Encontrar una solución para que se refleje el resultado
 
 <details>
 
-<summary>Respuesta</summary>
+<summary>Solución</summary>
 	
 Una solución es declarar alguno de nuestras variables como flotante, por ejemplo:
 

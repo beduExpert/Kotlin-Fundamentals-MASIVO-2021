@@ -1,5 +1,5 @@
 
-# Ej. 1 - Primeros pasos - IntelliJ IDEA y hola mundo
+# Ej. 01 - Primeros pasos - IntelliJ IDEA y hola mundo
 
 ## OBJETIVO
 
@@ -7,13 +7,9 @@
 - Utilizar las herramientas básicas que nos proporciona el entorno de desarrollo
 - Crear nuestro primer programa con Kotlin!
 
-<br/>
-
 ## REQUISITOS
 
 1. Tener suficiente espacio en la memoria para instalar nuestro entorno de trabajo
-
-<br/>
 
 ## DESARROLLO
 

@@ -1,4 +1,4 @@
-# Ej. 2 - Declaración de variables
+# Ej. 02 - Declaración de variables
 
 ### OBJETIVO
 

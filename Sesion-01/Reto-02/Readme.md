@@ -14,7 +14,7 @@ Para un número decimal, qué tipo de dato se asigna por defecto? Imprimirlo
 
 <details>
 
-<summary>Respuesta</summary>
+<summary>Solución</summary>
 
 El tipo de dato por defecto es Long y lo comprobamos así:
 
@@ -35,7 +35,7 @@ Volver flotante a la variable *decimal*
 
 <details>
 
-<summary>Respuesta</summary>
+<summary>Solución</summary>
 
 El tipo de dato por defecto es Long y lo comprobamos así:
 
@@ -66,7 +66,7 @@ Para multiplicar adelantaremos el uso del operador de multiplicación  * y su us
 
 <details>
 
-<summary>Respuesta</summary>
+<summary>Solución</summary>
 
 ```kotlin
 const val PI = 3.1416
@@ -88,7 +88,7 @@ para el ejemplo anterior, utilizar un *String Template* para imprimir el texto *
 
 <details>
 
-<summary>Respuesta</summary>
+<summary>Solución</summary>
 
 ```kotlin
 ...

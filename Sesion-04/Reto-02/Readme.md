@@ -101,7 +101,7 @@
     Redefinir la función *getPrice()* para que se obtenga el precio de un viaje con impuesto incluído. Hacer pruebas.
 
     <details>
-        <summary>Respuesta</summary>
+        <summary>Solución</summary>
 
     ```kotlin
     override fun getPrice(numDays: Int): Int {
@@ -142,7 +142,7 @@
 4. crear una interfaz que permita cancelar viajes. Implementarlo en la clase ***NationalLowSeason***. Hacer pruebas.
 
     <details>
-        <summary>Respuesta</summary>
+        <summary>Solución</summary>
 
     Creamos la interfaz 
     ```kotlin

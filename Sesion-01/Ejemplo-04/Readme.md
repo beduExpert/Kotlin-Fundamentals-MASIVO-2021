@@ -1,4 +1,4 @@
-# Ej. 4 - Operadores
+# Ej. 04 - Operadores
 
 ## OBJETIVO
 
@@ -32,16 +32,15 @@ a..b | a.rangeTo(b)
 se utilizan así:
 
 ```kotlin
-    val a = 10
-    val b = 5
+val a = 10
+val b = 5
 
-    println(a+b)
-    println(a-b)
-    println(a*b)
-    println(a/b)
-    println(a%b)
-    println(a..b)
-
+println(a+b)
+println(a-b)
+println(a*b)
+println(a/b)
+println(a%b)
+println(a..b)
 ```
 
 El resultado esperado es: 
@@ -61,12 +60,12 @@ El resultado esperado es:
 El código equivalente con métodos sería así:
 
 ```kotlin
-    println(a.plus(b))
-    println(a.minus(b))
-    println(a.times(b))
-    println(a.div(b))
-    println(a.rem(b))
-    println(a.rangeTo(b))
+println(a.plus(b))
+println(a.minus(b))
+println(a.times(b))
+println(a.div(b))
+println(a.rem(b))
+println(a.rangeTo(b))
 ```
 
 y debe arrojar el mismo resultado.
@@ -81,11 +80,11 @@ a-- | a.dec()
 
 > Incrementan un ***var*** o decrementar en 1 el valor de nuestra variable,
 ```kotlin
-	var c = 23
-    c++
-    println(c)
-    c--
-    println(c)
+var c = 23
+c++
+println(c)
+c--
+println(c)
 ```
 
 
@@ -112,15 +111,14 @@ para demostrar estas operaciones, imprimiremos:
 ```kotlin
 var d = 3
 
-    d+=b // d = 3+5  = 8
-    println(d)
-    d-=b // d = 8 - 5 = 3
-    println(d)
-    d*=b // d = 3 * 5 = 15
-    println(d)
-    d/=b // d = 15 / 5 = 3
-    println(d)
-}
+d+=b // d = 3+5  = 8
+println(d)
+d-=b // d = 8 - 5 = 3
+println(d)
+d*=b // d = 3 * 5 = 15
+println(d)
+d/=b // d = 15 / 5 = 3
+println(d)
 ```
 
 Los resultados sdeben ser: 
@@ -146,10 +144,10 @@ a != b | !a.equals(b)
 Ejemplificamos su utilización en kotlin: 
 
 ```kotlin
-    val e=5
-    println("a es igual a b? ${a==b}")
-    println("e es igual a b? ${e.equals(b)}")
-    println("d es distinto de a? ${d != a}")
+val e=5
+println("a es igual a b? ${a==b}")
+println("e es igual a b? ${e.equals(b)}")
+println("d es distinto de a? ${d != a}")
 ```
 
 >a es igual a b? false
