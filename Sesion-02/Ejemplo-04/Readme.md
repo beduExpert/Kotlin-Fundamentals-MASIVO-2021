@@ -45,15 +45,15 @@ println("Index del elemento \"four\": ${numeros.indexOf("four")}")
 Si usamos este tipo **List<T>** tenemos que saber que no es mutable, es decir **no podemos alterar sus elementos**, para ello tenemos **MutableList<T>** lo cual representa una lista, a la cual sí podemos agregar, leer, eliminar o modificar sus elementos:
 
 ```kotlin
-val numer = mutableListOf(1, 2, 3, 4)
-//Abrebar nuevos elementos
-numeros.add(5)
+val list = mutableListOf(1, 2, 3, 4)
+//Agregar elementos
+list.add(5)
 //Remover elementos
-numeros.removeAt(1)
+list.removeAt(1)
 //Modificar elementos
-numeros[0] = 0
+list[0] = 0
 
-println(numeros)
+println(list)
 ```
 Como puedes notarlo, las listas son semejantes a los Arrays que ya habíamos visto, pero a diferencia de los arreglos, las listas no tienen un tamaño definido. Este va cambiando conforme se añaden o remueven elementos.
 

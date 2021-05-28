@@ -5,7 +5,7 @@
 
 - Sintetizar los temas de la [Sesión 2](../../Sesion-02) para aplicarlos al proyecto final.
 - Programar con elementos de programación estructurada la lógica básica de nuestro proyeccto.
-- Almacenar datos requeridos para nuestro proyecto en estruccturas.
+- Almacenar datos requeridos para nuestro proyecto en estructuras.
 
 ## REQUISITOS
 
@@ -29,7 +29,7 @@ En el Reto final pasado, abordamos los lineamientos de nuestro proyecto final y 
 
 ### Lineamientos 
 
-* Se recomienda que se escriban en una nota todas definiciones y listas de tareas que se contemplen, para tener el panorama completo a la vista antes de comenzar a programar.
+* Se recomienda que se escriban en una nota todas las definiciones y listas de tareas que se contemplen, para tener el panorama completo a la vista antes de comenzar a programar.
 * Definimos los datos iniciales que vamos a guardar en nuestra aplicación, si es un catálogo de ropa como Zara, creamos una estructura de datos con una lista de ropa predefinida. Definir Si la o las estructuras de datos podrán mutar o no (pudiéndose agregar o eliminar datos).
 * Debemos hacer una lista de tareas que se van a ejecutar en nuestra aplicación, como reproducir música, pagar un servicio, llamar a atención a clientes, etc.
 * En tareas que se impliquen condicionales, definir si utilizar *if-else* o *when case*, el segundo se emplea al hacer una evaluación múltiple de un mismo argumento, mientras que el primero la evaluacción puede variar en cada *if* o *else if*.

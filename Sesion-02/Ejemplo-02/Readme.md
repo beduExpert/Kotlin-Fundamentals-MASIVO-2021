@@ -1,4 +1,4 @@
-# Ej. 2 - Condicionales
+# Ej. 02 - Condicionales
 
 ## OBJETIVO
 
@@ -18,12 +18,12 @@ El operador ***if*** funciona a través de un valor Booleano como parámetro: s�
 
 ```kotlin
 if(true){
-        println("Siempre se ejecutará esta sentencia")
-    }
+    println("Siempre se ejecutará esta sentencia")
+}
 
-    if(false){
-        println("Esta linea nunca se va a ejecutar")
-    }
+if(false){
+    println("Esta linea nunca se va a ejecutar")
+}
 ```
 
 Y en efecto, al ejecutar el código anterior, se imprime:
@@ -60,8 +60,8 @@ si tenemos 18 o más nos debe mostrar el mensaje. Cambiaremos por tanto el opera
 
 ```kotlin
 if(age!! >=18){
-        println("Ya eres mayor de edad!")
-    }
+    println("Ya eres mayor de edad!")
+}
 ```
 
 Perfecto! ahora escribe un valor de 18 en adelante para validar que se reciba el mensaje. ¿Qué pasa si ingresas un número menor?
