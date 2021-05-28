@@ -1,16 +1,16 @@
-## Ciclos
+# Ej. 03 - Ciclos
 
-### OBJETIVO
+## OBJETIVO
 
 - Diferenciar entre los tipos de ciclos disponibles y utilizarlos según el caso
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Tener una noción básica de ciclos en programación
 
-#### DESARROLLO
+## DESARROLLO
 
-##### For
+### For
 
 El ciclo **for** itera sobre todos los elementos de cualquier objeto que proveea un *iterator*, que son objetos que pueden regresar secuencialmente sus elementos, heredando de *Iterable<T>*. Las listas son un ejemplo.
 	
@@ -53,24 +53,24 @@ Regresará los siguientes números:
 Podemos iterar también sobre una lista:
 
 ```kotlin
-    val nombres = listOf(
-        "Kirby",
-        "Ness",
-        "Fox",
-        "Luigi",
-        "Mario",
-        "Link",
-        "Captain Falcon",
-        "Samus",
-        "Pikachu",
-        "Jigglypuff",
-        "Donkey Kong",
-        "Yoshi"
-    )
+val nombres = listOf(
+    "Kirby",
+    "Ness",
+    "Fox",
+    "Luigi",
+    "Mario",
+    "Link",
+    "Captain Falcon",
+    "Samus",
+    "Pikachu",
+    "Jigglypuff",
+    "Donkey Kong",
+    "Yoshi"
+)
 
-    for (nombre in nombres){
-        println(nombre)
-    }
+for (nombre in nombres){
+    println(nombre)
+}
 ```
 
 los iterators cuentan con un método llamado *foreach* y es equivalente al anterior ciclo for:
@@ -83,18 +83,18 @@ también podemos parar el ciclo cuando decidamos, por ejemplo:
 
 ```kotlin
  for (nombre in nombres){
-        println(nombre)
-        if(nombre=="Link"){
-            println("Personaje encontrado!")
-           break
-        }
+    println(nombre)
+    if(nombre=="Link"){
+        println("Personaje encontrado!")
+        break
     }
+}
 ```
 
 por supuesto el loop se detendrá al encontrar el nombre Link.
 
 
-##### While
+### While
 
 Los ciclos while mantienen el ciclo hasta que la condición dentro de él:
 
@@ -110,4 +110,7 @@ while (x > 0) {
    
 
 
+</br>
+
+[Siguiente](../Reto-03)
 

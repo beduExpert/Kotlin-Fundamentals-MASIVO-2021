@@ -1,16 +1,16 @@
-## Funciones
+# Ej. 01 - Funciones
 
-### OBJETIVO
+## OBJETIVO
 
 - Implementar funciones a nuestro código para modularizarlo
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Tener una noción del concepto de función en programación
 
-#### DESARROLLO
+## DESARROLLO
 
-##### General
+### General
 
 En esta serie de ejercicios aprenderemos a definir y crear funciones en kotlin.
 
@@ -53,13 +53,11 @@ pow es una **función** que vive en la clase float (o en otros tipos numéroicos
 Ahora vamos a sacar el área de un círculo e imprimirlo en pantalla.
 
 ```kotlin 
-...
 fun main(){
     val radius= 4
     val area = circleArea(radius)
     println("el área del círculo es: $area")	
 }
-...
 ```
 
 ¿Qué sucede? El error reflejado nos indica que el tipo del parámetro esperado es un *Float* y estamos ingresando un *Int*
@@ -134,8 +132,9 @@ El resultado debe ser:
 
 > El número áureo vale 1.618
 
+</br>
 
-##### Local functions (Funciones locales)
+### Local functions (Funciones locales)
 
 Una función local es básicamente una función dentro de otra. Tiene las siguientes características
 
@@ -151,19 +150,19 @@ Una función local es básicamente una función dentro de otra. Tiene las siguie
 Sabiendo funciones locales se declaran de la misma forma que las normales,  vamos a crear una función login que valide usuario y contraseña. Dicha función se llamará validate y recibirá nuestro parámetro a evaluar (para este caso, si la variable no está vacía).
 
 ```kotlin
-    //Funciones locales
-    fun login(user: String, password: String) : Boolean {
-        fun validate(input: String): Boolean{
-            if (input.isEmpty()) {
-                return false
-            }
-            return true
+//Funciones locales
+fun login(user: String, password: String) : Boolean {
+    fun validate(input: String): Boolean{
+        if (input.isEmpty()) {
+            return false
         }
-        val userValidated = validate(user)
-        val passValidated = validate(password)
-
-        return userValidated && passValidated
+        return true
     }
+    val userValidated = validate(user)
+    val passValidated = validate(password)
+
+    return userValidated && passValidated
+}
 ```
 
 En la función anterior, primero declaramos la función validate y después validamos usuario y contraseña. Devolvemos las banderas de modo
@@ -172,11 +171,13 @@ que las dos deben estar correctas para recibir un login exitoso.
 Después, hay qué correr la función como sigue"
 
 ```kotlin
-    val userValidated = login("Juanito","Navaja") //utilizar la función login y guardar el resultado en una variable.
-    println("Usuario loggeado? $userValidated") // Imprimir si el usuario están ingicado.
+val userValidated = login("Juanito","Navaja") //utilizar la función login y guardar el resultado en una variable.
+println("Usuario loggeado? $userValidated") // Imprimir si el usuario están ingicado.
 ```
 
-##### Default Arguments y Named Arguments
+</br>
+
+### Default Arguments y Named Arguments
 
 Los ejemplos anteriormente vistos pasan sus parámetros en orden, de la misma forma en la que se declaran en la creación de la función, de modo que si tuviéramos dos parámetros de distintos tipos e invirtiéramos el orden de estos al momento de llamar la función, nos daría un error porque los tipos de datos no coincidirían con los de la definición. De la misma forma, si el número de parámetros ingresados en la llamada de la función son distintos al de la declaración, marcará otro error. Crearemos una función para el área de un rectángulo:
 
@@ -207,19 +208,21 @@ fun rectangleArea(base:Double = 20.0,  height: Double = 30.0):Double{
 Determinamos entonces base con valor 20 y altura como 30 en caso de no pasarlos como parámetro. Hacemos dos pruebas; la primera sin argumentos, y la segunda solo con la base:
 
 ```kotlin
-    //correr area rectangulo con los valores por defecto
-    println("Area con valores por defecto: ${rectangleArea()}")
+//correr area rectangulo con los valores por defecto
+println("Area con valores por defecto: ${rectangleArea()}")
 
-    //Area de rectangulo con base seteada y altura por defecto
-    println("Area con altura por defecto: ${rectangleArea(10.0)}")
+//Area de rectangulo con base seteada y altura por defecto
+println("Area con altura por defecto: ${rectangleArea(10.0)}")
 ```
 
 para el primer ejemplo, se ocupan los valores por defecto 20x30 = 600. Para el segundo, la base es 10 y la altura es por defecto, o sea 10x30 = 300.
 
 Tenemos ahora un problema, si queremos poner únicamente la altura, no podemos hacerlo debido a que el orden de los argumentos nos obliga a poner primero la b ase para determinar la altura. Afortunadamente, los named arguments permiten pasar argumentos a funciones por medio de su nombre y prescindiendo del orden en que se declaran. Entonces, si queremos asignar únicamente altura, solo tenemos qué poner el nombre y su valor dentro de los paréntesis:
 
+```kotlin
 //Area de rectangulo con por defecto y altura seteada con named arguments
-    println("Area con base por defecto: ${rectangleArea(height = 10.0)}")
+println("Area con base por defecto: ${rectangleArea(height = 10.0)}")
+```
     
 En este caso, la base vale 20 y la altura 10, por lo tanto 20x10 = 200.
 
@@ -227,7 +230,7 @@ Podemos determinar los dos parámetros con argumentos nombrados (named arguments
 
 ```kotlin
 //setear base y altura con named arguments
-    println("Area con datos determinados con named arguments: ${rectangleArea(height = 2.0,base=3.5)}")
+println("Area con datos determinados con named arguments: ${rectangleArea(height = 2.0,base=3.5)}")
 ```
 
 En este caso, el valor arrojado es de 2x3.5 = 7. 
@@ -236,5 +239,8 @@ Puedes intentar cambiar el orden para verificar que esto no afecta al resultado 
 
 
 
+</br>
+
+[Siguiente](../Reto-01)
 
 

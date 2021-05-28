@@ -1,15 +1,15 @@
-## Condicionales 
+# Reto 02 - Condicionales 
 
-### OBJETIVO 
+## OBJETIVO 
 
 - Poner en práctica ejemplos de condicionales
 
-#### REQUISITOS 
+## REQUISITOS 
 
 1. Saber la sintaxis de la expresión *When*
 2. Haber utilizado previamente la expresión *if*
 
-#### DESARROLLO
+## DESARROLLO
 
 1. Crear una función que pida como parámetros las medidas de los lados de un triángulo. Debe imprimirnos el tipo de tríangulo:
 
@@ -41,6 +41,8 @@ fun tipoDeTriangulo(lado1: Int, lado2: Int, lado3: Int){
 ```
 
 </details>
+
+</br>
 
 2. Con ***When*** identificar si el tipo de dato es:
 
@@ -74,3 +76,7 @@ fun tipoDeDato(dato: Any){
 
 </details>
 
+
+</br>
+
+[Siguiente](../Ejemplo-03)

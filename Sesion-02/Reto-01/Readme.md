@@ -1,55 +1,58 @@
 
 	
-## Funciones
+# Reto 01 - Funciones
 
-### OBJETIVO 
+# OBJETIVO 
 
 - Crear funciones a partir de lo aprendido en el [Ejemplo 1](../Ejemplo-01)
 
-#### REQUISITOS 
+## REQUISITOS 
 
 1. Saber implementar funciones
 
-#### DESARROLLO
+## DESARROLLO
 
 1. Crear una función que calcule el área de un rectángulo por medio de su base y altura, implementarla en *main*
 2. Crear otra función para calcular el volumen de un prisma rectangular, utilizar la función de área
 
+
 <details>
 	<summary>Solucion</summary>
 	
-Respuesta a 1)
-```kotlin
-fun main(){
-    val base = 20f
-    val altura =4f
-    val area = areaRectangulo(base,altura)
-    println("el área del rectángulo es $area")
-}
+- Respuesta a 1)
+    ```kotlin
+    fun main(){
+        val base = 20f
+        val altura =4f
+        val area = areaRectangulo(base,altura)
+        println("el área del rectángulo es $area")
+    }
 
-fun areaRectangulo(base: Float, altura: Float):Float{
-    return base*altura
-}
-```
+    fun areaRectangulo(base: Float, altura: Float):Float{
+        return base*altura
+    }
+    ```
 
-Respuesta a 2)
-```kotlin
-fun main(){
-...
-val ancho = 2f
+- Respuesta a 2)
+    ```kotlin
+    fun main(){
+    ...
+    val ancho = 2f
 
-...
- val volumen = volumenPrisma(base,altura,ancho)
- println("el volumen del prisma es $volumen")
-}
-...
+    ...
+    val volumen = volumenPrisma(base,altura,ancho)
+    println("el volumen del prisma es $volumen")
+    }
+    ...
 
-fun volumenPrisma(base: Float, altura:Float, ancho: Float):Float{
-    return areaRectangulo(base,altura)*ancho
-}
-```
+    fun volumenPrisma(base: Float, altura:Float, ancho: Float):Float{
+        return areaRectangulo(base,altura)*ancho
+    }
+    ```
 
 </details>
+
+</br>
 
 3. Una función puede tener parámetros con valores por defecto en caso de que no se setee ninguno, a continuación cómo se implementa: 
 
@@ -88,9 +91,10 @@ fun promedio(primera: Float = 8f,
              tercera: Float): Float{
     return (primera + segunda + tercera)/3f
 }
-
 ```
 </details>
+
+</br>
 
 5. Utilizar la función *promedio*, Comentar qué pasa si se ingresa sólo una calificación en la función y después con dos. Finalmente, buscar que la función corra enviando únicamente la tercera calificación con 10f:
 
@@ -107,12 +111,17 @@ el resultado debe ser:
 
 </details>
 
+</br>
+
 6. **OPCIONAL:** Buscar una forma de redondear la calificación
 
 
 
 
 
+</br>
+
+[Siguiente](../Ejemplo-02)
 
 
 

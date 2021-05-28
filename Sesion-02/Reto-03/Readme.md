@@ -1,15 +1,14 @@
-## Ciclos
+# Reto 03 - Ciclos
 
-### OBJETIVO 
+## OBJETIVO 
 
 - Aplicar ciclos para resolver problemas
 
-#### REQUISITOS 
+## REQUISITOS 
 
 1. Haber finalizado el [Ejemplo 3](../Ejemplo-03)
 
-#### DESARROLLO
-
+## DESARROLLO
 
 1. Crear y utilizar una función que regrese el número de veces que se repite un nombre en la siguiente lista de nombres:
 
@@ -96,3 +95,7 @@ La diferencia es que while checa la condición al inicio y do-while al final
 	
 </details>
 
+
+</br>
+
+[Siguiente](../Ejemplo-04)
