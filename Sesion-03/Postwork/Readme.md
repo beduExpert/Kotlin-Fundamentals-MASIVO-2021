@@ -1,15 +1,15 @@
-## Postwork
+# Postwork
 
-### OBJETIVO
+## OBJETIVO
 
 - Diseñar clases con propiedades y métodos que representen correctamente un objeto.
 - Abstraer la lógica del proyecto final al paradigma que brinda POO
 
-#### REQUISITOS
+## REQUISITOS
 
-1. Haber terminado los ejemplos y retos de esta [Sesión](../)
+- Haber terminado los ejemplos y retos de esta [Sesión](../)
 
-#### DESARROLLO
+## DESARROLLO
 
 Explicaremos un poco cómo la Programación Orientada a Objetos puede adaptarse exitosamente a una aplicación informática.
 
@@ -37,23 +37,23 @@ Con esto tenemos todo el modelo de datos de nuestra información de perfil. Si q
 ```kotlin
 ...
  private var phoneNumber: Long = 0
-        set(value){  //Utilizamos un setter para guardar un valor sólo cuando cumpla con los 10 dígitos de un número telefónico
-            if(value.toString().length == PHONE_LENGTH){
-                field = value
-            } else{
-                println("El número que ingresaste es incorrecto")
-            }
+    set(value){  //Utilizamos un setter para guardar un valor sólo cuando cumpla con los 10 dígitos de un número telefónico
+        if(value.toString().length == PHONE_LENGTH){
+            field = value
+        } else{
+            println("El número que ingresaste es incorrecto")
         }
+    }
 ...
 ```
 Si queremos poder modificar ciertos datos de mi perfil, podemos crear una función que haga el update:
 
 ```kotlin
  //Esta función nos permite actualizar los datos modificables de nuestro perfil
-    fun updateProfile(phoneNumber: Long, age:Int){
-        this.phoneNumber = phoneNumber
-        this.age =  age
-    }
+fun updateProfile(phoneNumber: Long, age:Int){
+    this.phoneNumber = phoneNumber
+    this.age =  age
+}
 ```
 
 Dejando este ejemplo atrás, si pensamos en una tienda en línea de teléfonos celulares, tenemos que tener una clase que represente dicho producto. un teléfono tiene como características su modelo, marca, color, SKU y precio. 
@@ -80,4 +80,7 @@ Seamos conscientes que vamos a requerir un carrito de compras para guardar los c
 
 
 
+</br>
+
+[Regresar](../)
 

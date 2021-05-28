@@ -1,15 +1,15 @@
-## Clases y objetos
+# Ej. 01 - Clases y objetos
 
-### OBJETIVO
+## OBJETIVO
 
 - Crear el código para generar una clase
 - Instanciar clases
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Leer sobre Programación Orientada a Objetos
 
-#### DESARROLLO
+## DESARROLLO
 
 La Programación orientada objetos interpreta problemas y los abstrae a modelos de objetos con atributos y métodos.
 
@@ -62,7 +62,6 @@ Abora vamos a integrarle métodos, que representan accciones que pueden ser llev
 
 ```kotlin
 class Phone{
-...
 
     //métodos
     fun turnOn(){
@@ -77,9 +76,6 @@ class Phone{
         val turnMode = if(isOn) "Encendido" else "Apagado"
         println("el teléfono esta $turnMode")
     }
-    
-    
-
 }
 ```
 notar que los métodos modifican mi atributo prendido o apagado.
@@ -111,6 +107,9 @@ El resultado es el siguiente:
 
 
 
+</br>
+
+[Siguiente](../Reto-01)
 
 
 

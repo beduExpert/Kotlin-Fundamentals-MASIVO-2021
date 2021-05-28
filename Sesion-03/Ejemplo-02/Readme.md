@@ -1,14 +1,14 @@
-## Constructores
+# Ej. 02 - Constructores
 
-### OBJETIVO
+## OBJETIVO
 
 - Implementar constructores en nuestras clases para definir variables esenciales
 
-#### REQUISITOS
+## REQUISITOS
 
-1. Saber crear una clase, generar un objeto, asignar valores y llama métodos
+- Saber crear una clase, generar un objeto, asignar valores y llama métodos
 
-#### DESARROLLO
+## DESARROLLO
 
 Un constructor es un método que define los atributos mínimos requeridos para crear un objeto.
 
@@ -31,6 +31,7 @@ class Vehiculo constructor(val marca:String, val modelo: String, var color: Stri
     var placas = ""
     var gasolina = 0f
     var encendido = false
+}
 ```
 
 Como marca y modelo no cambian, usaremos val; el color puedes ser cambiado, por eso es var. Esto debido a que el keyword *val* implica que la variable se le asigna el valor una sola vez y es inmutable (no cambia su valor), mientras que *var* permite modificar indefinidamente su valor (mutable).
@@ -49,11 +50,11 @@ El constructor sólo define atributos, por lo tanto si se quiere ejecutar códig
 class Vehiculo(val marca:String, val modelo: String, var color: String){
 
 init{
-        println("""Los datos del coche son:
-            marca: $marca
-            modelo: $modelo
-            color: $color""")
-    }
+    println("""Los datos del coche son:
+        marca: $marca
+        modelo: $modelo
+        color: $color""")
+}
 ...
 }
 ```
@@ -129,6 +130,7 @@ class Vehiculo (val marca:String, val modelo: String, var color: String) {
     var placas = ""
     var gasolina = 0f
     var encendido = false
+}
 ```
 
 En este caso, el secundario da como una opción la de poder ingresar la placa en el constructor, pero no sustituye al primario. CUando el constructor primario existe, debemos regresar como tipo, this(parametros del constructor). Ahora en *Main*, agregamos la placa.
@@ -167,10 +169,10 @@ Ahora utilizaremos named arguments, crearemos un pointer azul:
 
 ```kotlin
 val pointer = Vehiculo(
-        color = "azul",
-        marca = "Volkswagen",
-        modelo = "Pointer"
-    )
+    color = "azul",
+    marca = "Volkswagen",
+    modelo = "Pointer"
+)
 ```
 
 el resultado debe ser impreso sin ningún detalle.
@@ -181,3 +183,6 @@ el resultado debe ser impreso sin ningún detalle.
 
 
 
+</br>
+
+[Siguiente](../Reto-02)
