@@ -1,19 +1,19 @@
-## Postwork
+# Postwork
 
-### OBJETIVO 
+## OBJETIVO 
 
 - Utilizar recursos provistos en lenguaje Java
 - Aprovechar características como miembros estáticos 
 
-#### REQUISITOS 
+## REQUISITOS 
 
 1. Conocimiento básico de lenguaje Java
 
 
-#### DESARROLLO
+## DESARROLLO
 
 
-##### Utilizando J2K
+### Utilizando J2K
 
 IntelliJ Idea viene equipado con una herramienta bastante útil e interesante : J2K (Java to Kotlin ) Que permite convertir un archivo Java a Kotlin. Vamos a aprender a utilizarlo.
 
@@ -62,7 +62,7 @@ object Utils {
 Como tal, no es totalmente una equivalencia, pero si ejecutamos de nuevo el *main*, funciona! En casos como clases simples, la conversión puede ser más fiel. Inténtalo convirtiendo la clase SmartPhone a Kotlin!!
 
 
-##### Paquetes Java
+### Paquetes Java
 
 gran parte de la interoperabilidad entre estos dos lenguajes se encuentra en el uso de paquetes de java en kotlin, puesto que proporciona muchas herramientas útiles que quizá kotlin aun no implementa como nativa. 
 
@@ -72,9 +72,13 @@ algunos ejemplos son:
 * java.text
 * java.io
 
-##### Integración al proyecto
+### Integración al proyecto
 
 Busca implementar nuevas funcionalidades a tus clases, como dar formato a fechas, dinero y tiempo; o quizá generar números aleatorios. Prueba buscando soluciones en internet a estas funcionalidades pero en lenguaje Java, y después integrándolo a tu proyecto. Esto es algo útil en el desarrollo de apps porque tanto en documentación de librerías como muchas de las soluciones a problemas (incluyendo stackoverflow) siguen presentándose en Java.
 
 
 
+
+</br>
+
+[Regresar](../)

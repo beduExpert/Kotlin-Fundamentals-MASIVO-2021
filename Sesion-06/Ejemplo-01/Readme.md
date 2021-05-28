@@ -1,17 +1,17 @@
-## Ejemplo 1: Clases Java en Kotlin
+# Ejemplo 01 - Clases Java en Kotlin
 
-### OBJETIVO
+## OBJETIVO
 
 - Demostrar la capacidad de interoperabilidad entre clases Java para Kotlin
 - Utilizar los getters/setters de una clase Java como propiedades en Kotlin
 - Experimentar las limitaciones de la comunicación entre estos
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Saber utilizar clases Java
 2. (Opcional) Tener un ligero conocimiento de programación con Java
 
-#### DESARROLLO
+## DESARROLLO
 
 Kotlin puede utilizar clases Java con tan solo pequeños detalles en su compatibilidad.
 Una prueba de esto es el siguiente código:
@@ -47,63 +47,63 @@ Declaramos el constructor dentro de la clase (Así es la sintaxis de Java). Este
 
 ```java
 public User(String name,String lastName,int age, String status,boolean male) {
-        this.name = name;
-        this.lastName = lastName;
-        this.age = age;
-        this.status = status;
-        this.male = male;
-    }
+    this.name = name;
+    this.lastName = lastName;
+    this.age = age;
+    this.status = status;
+    this.male = male;
+}
 ```
 
 declaramos después los getters y setters para el nombre:
 
 ```java
 public String getName() {
-        return name;
-    }
+    return name;
+}
 
 public void setName(String name) {
-        this.name = name;
-    }
+    this.name = name;
+}
 ```
 
 para lastName, declaramos solamente un getter:
 
 ```java
 public String getLastName(){
-        return lastName;
-    }
+    return lastName;
+}
 ```
 para status, dejamos únicamente un setter:
 
 ```java
 public void setStatus(String status){
-        this.status = status;
-    }   
+    this.status = status;
+}   
 ```
 
 Para age, crearemos un getter y un setter, pero sin seguir la convención de los nombres (el getter debería llamarse getAge) :
 
 ```java
 public int getUserAge(){
-        return age;
-    }
+    return age;
+}
 
-    public void setAge(int age){
-        this.age = age;
-    }
+public void setAge(int age){
+    this.age = age;
+}
 ```
 
 Por último, para el atributo ***male*** seguiremos la convención de un getter para un valor booleano, o sea:
 
 ```java
 public boolean isMale(){
-        return male;
-    }
+    return male;
+}
 
-    public void setMale(boolean male){
-        this.male = male;
-    }
+public void setMale(boolean male){
+    this.male = male;
+}
 ```
 
 Ahora que tenemos la clase Java armada, la instanciamos desde la función *main* de nuestro archivo principal Kotlin:
@@ -131,16 +131,16 @@ el código corre exitosamente, sin embargo, nos despliega una advertencia:
 Segun los lineamentos de Kotlin, podremos usar los getters y setters de una clase en Java como propiedades si obedecen a la convención de getters y setters. Cambiamos entonces la forma a propiedad para el getter y setter:
 
 ```kotlin
- // getter y setter de name
-    println(user.name)
-    user.name = "Rebeca"
+// getter y setter de name
+println(user.name)
+user.name = "Rebeca"
 ```
 
 para ***lastName***, sólo tenemos el getter
 
 ```kotlin
 //getters de lastName (no tiene setter)
-    println(user.lastName)
+println(user.lastName)
 ```
 al querer asignar un valor a esta propiedad, obtenemos el siguiente error:
 
@@ -160,26 +160,29 @@ Esto se debe a que Kotlin no soporta el formato propiedad para atributos que sol
 
 ```kotlin
 //setter de status (no tiene getter)
-    user.setStatus("Soltero")
+user.setStatus("Soltero")
 ```
 
 Para ***age***, el getter no se llama *getAge* sino *getUserAge*. Por lo tanto, el sistema interpreta que la variable se llama *userAge* y que solo tiene getter. Para el setter, sucede algo similar al ejemplo anterior: al suponer que solo existe un setter, este se puede llamar únicamente como método.
 
 ```kotlin
 //getter y setter de edad
-    println(user.userAge)
-    user.setAge(33)
+println(user.userAge)
+user.setAge(33)
 ```
 
 Para un booleano, la regla cambia: en vez del keyword ***get***, utilizamos ***is*** y el sistema interpreta que la variable se llama ***isMale*** en vez de *male*.
 
 ```kotlin
 //getter y setter de propiedad male (que cambia a isMale por regla)
-    println("El usuario es hombre? ${user.isMale}")
-    user.isMale = false
+println("El usuario es hombre? ${user.isMale}")
+user.isMale = false
 ```
 
 
 
+</br>
+
+[Siguiente](../Reto-01)
 
 

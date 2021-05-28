@@ -1,20 +1,20 @@
-## Miembros estáticos y companion objects
+# Ejemplo 03 - Miembros estáticos y companion objects
 
-### OBJETIVO
+## OBJETIVO
 
 - Invocar miembros estáticos de clases de java en Kotlin
 - Utilizar companion objects de kotlin en Java
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Saber el concepto de miembros estáticos en Java
 2. Utilizar companion objects en kotlin
 
-#### DESARROLLO
+## DESARROLLO
 
 El siguiente ejemplo requiere de la creación de varios archivos, que en este caso dejaremos en la misam raíz.
 
-##### Funciones estáticas
+### Funciones estáticas
 
 En java, existe un modificador llamado ***static*** que tiene la capacidad de fijar un miembro de la clase, pudiéendo hacer referencia a ella sin necesidad de crear un nuevo objeto. En kotlin, el equivalente es el companion object, visto en el [Ejmplo 3](../../Sesion-04/Ejemplo-03) de las sesión 4, porque puede retener directamente los valores sin instanciarlos.
 
@@ -28,7 +28,6 @@ public class Product {
         stock--;
         System.out.println("Artículo removido, restantes: " + stock);
     }
-
 }
 ```
 
@@ -36,12 +35,12 @@ Kotlin imita a la perfección el uso de los statics en Java, por lo que llamar a
 
 ```kotlin
 fun main(){
-//Llamando a miembros estáticos de la clase hecha en Java
+    //Llamando a miembros estáticos de la clase hecha en Java
     Product.removeArticle()
 }
 ```
 
-##### identificadores java y keywords kotlin
+### Identificadores java y keywords kotlin
 
 Podría presentarse el caso en el que algún identificador del miembro de una clase creada en Java lleve el mismo nombre que un *keyword* en kotlin, es por eso que para estos casos, se usan los backticks  de forma que se puedan usar los miembros en kotlin sin tener un error.
 
@@ -85,11 +84,11 @@ Keywords.`fun`()
 De forma similar, corremos los otros dos métodos 
 
 ```kotlin
-    Keywords.`val`()
-    Keywords.`is`()
+Keywords.`val`()
+Keywords.`is`()
 ```
 
-##### Companion Objects y Java
+### Companion Objects y Java
 
 Similar a las funciones estáticas, Java puede reconocer los companion objects. Como ejemplo, utilizamos la clase ***RandomGenerator*** en su respectivo archivo:
 
@@ -125,14 +124,18 @@ Podemos evitar el código verborrágico para obtener el valor de ***initialPhras
 
 ```kotlin
 ...
-	@JvmField
-        val initialPhrase = "Hola a todos"
+@JvmField
+val initialPhrase = "Hola a todos"
 ```
 
 y se manda a llamar en Java como: 
 
 ```java
-	System.out.println(RandomGenerator.initialPhrase);
+System.out.println(RandomGenerator.initialPhrase);
 ```
 
 
+
+</br>
+
+[Siguiente](../Reto-02)
