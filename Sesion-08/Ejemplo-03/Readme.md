@@ -1,20 +1,20 @@
-## Suspend functions y Jobs
+# Ej. 03 - Suspend functions y Jobs
 
-### OBJETIVO
+## OBJETIVO
 
 - Suspender la tarea de una corrutina hasta terminar de ejecutar otro proceso.
 - Identificar la diferencia entre suspender y parar
 - Parar corrutinas mediante un método
 - Paralelizar dos corrutinas para que un Scope espere a la finalización de las dos
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Haber sintetizado el concepto de corrutinas
 2. Saber utilizar scopes y diferenciarlos del Global Scope
 
-#### DESARROLLO
+## DESARROLLO
 
-##### suspend functions
+### Suspend functions
 
 Una ***suspend function*** , es aquella función que puede suspender una corrutina mientras ejecuta su tarea. Bajo esta definición, ***delay()*** es una suspend function.
 
@@ -69,7 +69,7 @@ fun main() = runBlocking { // this: CoroutineScope
 }
 ```
 
-##### Jobs
+### Jobs
 
 Cuando lanzamos una coroutine, un objeto Job hace referencia a esta. Por medio de esta referencia, podemos invocar distintos métodos y atributos de este, por ejemplo:
 
@@ -119,15 +119,15 @@ Supongamos que una corrutina se encarga de hacer el pago de un producto en líne
 
 ```kotlin
 val buyJob = launch(Dispatchers.Default) {
-            var percentage = 0
+    var percentage = 0
 
-            while (percentage<100){
-                println("procesando pago: $percentage%")
-                delay(500)
-                percentage+=10
-            }
-            println("Pago exitoso!")
-        }
+    while (percentage<100){
+        println("procesando pago: $percentage%")
+        delay(500)
+        percentage+=10
+    }
+    println("Pago exitoso!")
+}
 ```
 
 Si queremos cancelar, esperamos un poco para ver algo de la carga y utilizamos el método ***cancel()***
@@ -138,3 +138,6 @@ buyJob.cancel()
 ```
 
 
+</br>
+
+[Siguiente](../Reto-02)

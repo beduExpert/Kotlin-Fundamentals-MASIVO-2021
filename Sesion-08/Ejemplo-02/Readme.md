@@ -1,15 +1,15 @@
-## Threads vs Coroutines
+# Ej. 02 - Threads vs Coroutines
 
-### OBJETIVO
+## OBJETIVO
 
 - Corroborar el bajo costo de recursos que implica el uso de una coroutine frente a un Thread
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Conocimiento básico de Threads
 2. Saber ejecutar coroutines
 
-#### DESARROLLO
+## DESARROLLO
 
 Este ejemplo se centrará en mostrarnos el performance de múltiples ***threads*** ejecutando una tarea sencilla vs ***coroutines*** haciendo lo mismo.
 
@@ -29,14 +29,14 @@ Ahora, vamos a utilizar un valor numérico **AtomicLong** que es un Long que se 
 ```kotlin
 val coroutineNum = AtomicLong()
 
-    measureTimeMillis {
-        for (i in 1..1_000_000L)
-            GlobalScope.launch {
-                coroutineNum.addAndGet(i)
-            }
-    }
+measureTimeMillis {
+    for (i in 1..1_000_000L)
+        GlobalScope.launch {
+            coroutineNum.addAndGet(i)
+        }
+}
 
-    println("valor de c: ${coroutineNum.get()}")
+println("valor de c: ${coroutineNum.get()}")
 ```
 
 El resultado de esta ejecución dio lo siguiente: 
@@ -49,16 +49,16 @@ valor del número: 500000500000
 De la misma forma, vamos a correr un millón de hilos
 
 ```kotlin
-    val threadNum = AtomicLong()
+val threadNum = AtomicLong()
 
-    measureTimeMillis {
-        for (i in 1..1_000_000L)
-            thread(start = true) {
-                threadNum.addAndGet(i)
-            }
-    }
+measureTimeMillis {
+    for (i in 1..1_000_000L)
+        thread(start = true) {
+            threadNum.addAndGet(i)
+        }
+}
 
-    println("valor del numéro: ${threadNum.get()}")
+println("valor del numéro: ${threadNum.get()}")
 ```
 
 En mi caso, este fue mi resultado:
@@ -71,3 +71,7 @@ valor del numero: 500000500000
 La diferencia es de aproximadamente 58 segundos por la ejecución de una tarea sencilla, pero para tareas más complejas, el costo es mayor.
 
 
+
+</br>
+
+[Siguiente](../Ejemplo-03)

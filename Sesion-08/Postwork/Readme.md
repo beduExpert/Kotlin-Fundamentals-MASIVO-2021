@@ -1,15 +1,15 @@
-## Postwork
+# Postwork
 
-### OBJETIVO
+## OBJETIVO
  
 - Utilizar operaciones asíncronas en nuestro proyecto
 - Simular recuperación de datos o transacciones como compras, reservaciones o login
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Haber finalizado los tres ejemplos de esta sesión
 
-#### DESARROLLO
+## DESARROLLO
 
 En el [Reto final](../Reto-final) ejemplificamos el uso de las corrutinas para simular la recuperación remota de datos, pero las corrutinas pueden servir para bastantes más cosas:
 
@@ -34,3 +34,8 @@ fun main() = runBlocking {
 Otro ejemplo de aplicación de coroutines podría ser la aplicación de un filtro a una imagen cargada, como no se sabe con certeza el tiempo de ejecución y la operación podría ser pesada, se opta por utilizar una corrutina. Igual podría pasar con alguna operación que requiera analizar una gran cantidad de datos o incluso un algoritmo de visión artificial.
 
 Debido a que en este curso se pretende dar las bases de kotlin y no un desarrollo avanzado, muchas de las aplicaciones a coroutines pueden ser simplemente simulaciones.
+
+
+</br>
+
+[Regresar](../)

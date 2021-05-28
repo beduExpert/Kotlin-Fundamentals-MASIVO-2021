@@ -1,15 +1,15 @@
-## Introducción a las Coroutines
+# Ej. 01 - Introducción a las Coroutines
 
-### OBJETIVO
+## OBJETIVO
 
 - Generar operaciones asíncronas 
 - Diferenciar entre bloqueo y suspensión
 
-#### REQUISITOS
+## REQUISITOS
 
 1. Conocimiento previo de funciones asíncronas y corrutinas
 
-#### DESARROLLO
+## DESARROLLO
 
 Para desarrollar este proyecto, es necesario crear nuestro proyecto tal y como se indica en el inicio de esta (Sesión)[..], donde al final observamos un código de prueba, que es el siguiente:
 
@@ -22,7 +22,7 @@ fun main(){
 
     println("Inicio del programa")
 
-// Inicio de la corrutina
+    // Inicio de la corrutina
     GlobalScope.launch {
         delay(1000)
         println("Delay de un segundo")
@@ -30,7 +30,6 @@ fun main(){
 
     Thread.sleep(3000) // Esperar tres segundos
     println("Terminando programa")
-
 }
 ```
 
@@ -53,9 +52,14 @@ Podemos bloquear un hilo hasta terminar la ejecución de una corrutina, para eso
 ```kotlin
 ...
 runBlocking {     // bloquear el hilo donde se corre
-        delay(2000L)  //proceso de suspensión de 2 segundos
-    }
+    delay(2000L)  //proceso de suspensión de 2 segundos
+}
 println("bloqueo por corrutina de 2 segundos finalizado")
 ```
 
 por lo tanto, esperaremos los dos segundos que tarda nuestra rutina en finalizar para reanudar nuestro hilo principal.
+
+
+</br>
+
+[Siguiente](../Reto-01)

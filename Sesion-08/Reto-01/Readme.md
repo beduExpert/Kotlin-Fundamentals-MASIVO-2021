@@ -1,38 +1,42 @@
-## Introducción a las Coroutines
+# Reto 01 - Introducción a las Coroutines
 
-### OBJETIVO 
+## OBJETIVO 
 
 - Reforzar el aprendizaje adquirido en el (Ejemplo 1)[../Ejemplo-01]
 - Probar suspensiones y bloqueos en contextos inapropiados
 
-#### REQUISITOS 
+## REQUISITOS 
 
 1. Saber lanzar corrutinas
 2. Poder suspender hilos
 
-#### DESARROLLO
+## DESARROLLO
 
 Comenzaremos intentando probar métodos de hilos y rutinas fuera de contexto
 
 
 - Utilizar la función de suspensión ***delay()*** dentro del hilo principal, comentar lo que sucede y su causa.
 
-<details>
-	<summary>Solución</summary>
-	
-Nos arroja el siguiente error:
+	<details>
+		<summary>Solución</summary>
+		
+	Nos arroja el siguiente error:
 
-> Suspend function 'delay' should be called only from a coroutine or another suspend function
+	> Suspend function 'delay' should be called only from a coroutine or another suspend function
 
-</details>
+	</details>
+
+	</br>
 
 - Lanzar una corrutina y dentro de ella, suspender el hilo por un segundo. Comentar el resultado y su causa.
 
-<details>
-	<summary>Solución</summary>
-Al parecer, el thread principal no para, debido a que pese a que la corrutina se lanzó desde este, el hilo donde corre es otro, este hilo soporta muchas corrutinas.
+	<details>
+		<summary>Solución</summary>
+	Al parecer, el thread principal no para, debido a que pese a que la corrutina se lanzó desde este, el hilo donde corre es otro, este hilo soporta muchas corrutinas.
 
-</details>
+	</details>
 
+	
+</br>
 
-
+[Siguiente](../Ejemplo-02)

@@ -1,4 +1,4 @@
-# Sesión 8: Programacion Asíncrona
+# Sesión 08: Programacion Asíncrona
 
 ## :dart: Objetivos
 
@@ -75,7 +75,7 @@ fun main(){
 
     println("Inicio del programa")
 
-// Inicio de la corrutina
+    // Inicio de la corrutina
     GlobalScope.launch {
         delay(1000)
         println("Delay de un segundo")
@@ -83,7 +83,6 @@ fun main(){
 
     Thread.sleep(3000) // Esperar dos segundos
     println("Terminando programa")
-
 }
 ```
 
