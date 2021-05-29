@@ -31,7 +31,7 @@ Podríamos almacenar esta función dentro de una variable y después ejecutarla:
 var saludo = {println("Hola BEDU")}()
 
 //Ejecutamos nuestra funcion lambda
-saludo()
+saludo
 ```
 
 Las funciones literales se pueden clasificar en dos tipos: 
@@ -152,7 +152,7 @@ Para declarar una función de orden superior, vamos a usar la notación que ya c
 Hay que tomar en cuenta que la función que va como parámetro la vamos a escribir con la notación de lambda. Ojo con lo que sigue, los parámetros "tradicionales" son los que van a entrar a nuestra lambda, ejemplo:
 >Función de orden superior que recibe dos numeros enteros y una función lambda que va a sumar esos números:
 
-```
+```kotlin
 fun sumaOrdenSuperior(a: Int, b: Int, suma: (Int, Int) -> Int) -> Int {
 	return suma(a, b)
 }
@@ -175,17 +175,17 @@ fun sumaOrdenSuperior(a: Int, b: Int) {
 >nuestra Higher-order function, o sea, esta función de orden superior va a poder recibir cualquier función que 
 >cumpla con esa estructura.
 ```kotlin
-	fun sumaOrdenSuperior(a: Int, b: Int, suma: (Int, Int) -> Int) {
+fun sumaOrdenSuperior(a: Int, b: Int, suma: (Int, Int) -> Int) {
 
-	}
+}
 ```
 Como nuestra función **suma** está retornando un valor entero, entonces nuestra función de orden superior también tendría que hacerlo. Existirán casos en los que no tengan que tener el mismo tipo de retorno, pero eso depende mucho de la solución que tengamos que hacer.
 >Colocamos el tipo de retorno de nuestra funcion de orden superior igual al de nuestra función que va como 
 >parámetro, y por último retornamos la función suma con los parámetros que recibimos.
 ```kotlin
-	fun sumaOrdenSuperior(a: Int, b: Int, suma: (Int, Int) -> Int): Int {
-		return suma(a, b)
-	}
+fun sumaOrdenSuperior(a: Int, b: Int, suma: (Int, Int) -> Int): Int {
+	return suma(a, b)
+}
 ```
 Y entonces, ¿para qué nos sirven las funciones de orden superior?. 
 
@@ -207,7 +207,7 @@ fun multiplica(a: Int, b: Int) = a * b
 
 val suma = calculadora(10, 5, ::suma)
 val restar = calculadora(10, 5, ::resta)
-val multiplicar = calculadora(10, 5, ::multiplicacion)
+val multiplicar = calculadora(10, 5, ::multiplica)
 ```
 Si observas, estamos reutilizando código para hacer nuestras operaciones, y ya que las tres funciones que declaramos para cada una de nuestras operaciones cumplen con la misma estructura, podemos usarlas de la misma forma con nuestra función de orden superior. Usamos **::** para indicar que los parámetros que lleva nuestra Higher-order function se van a pasar a nuestra función que va como parámetro.
 

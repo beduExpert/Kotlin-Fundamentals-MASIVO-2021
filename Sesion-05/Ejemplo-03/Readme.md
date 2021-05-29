@@ -23,16 +23,16 @@ Supongamos que tenemos una lista de calificaciones y queremos filtrar únicament
 val calificaciones = listOf(10,8, 9 ,5,3,2,5,1,7,6,9,4,10,3,6,2,6,5)
 ```
 
-Esta es nuestra lista de calificaciones. De fomra imperativa, podríamos haber filtrado los valores iterando la lista y con un if, agregar únicamente a los que pasaban la condición:
+Esta es nuestra lista de calificaciones. De forma imperativa, podríamos haber filtrado los valores iterando la lista y con un if, agregar únicamente a los que pasaban la condición:
 
 ```kotlin
- var aprobados = mutableListOf<Int>()
-    for (calificacion in calificaciones){
-        if(calificacion>5){
-            aprobados.add(calificacion)
-        }
+var aprobados = mutableListOf<Int>()
+for (calificacion in calificaciones){
+    if(calificacion>5){
+        aprobados.add(calificacion)
     }
-    println(aprobados)
+}
+println(aprobados)
 ```
 
 A simple vista vemos que esta opción es bastante verborrágica e ineficiente, puesto que declaramos una lista mutable, y el código es menos óptimo que el implementado por kotlin.

@@ -15,7 +15,7 @@ En el [Ejemplo 1](../Ejemplo-01) utilizamos lambdas y high order functions (HFO)
 
 Si creamos esta función de orden superior
 ```kotlin
-fun nonInlined(runLambda(): () -> Unit) {
+fun nonInlined(runLambda: () -> Unit) {
     println("Antes de correr la función recibida")
     runLambda()
     println("después de correr la función recibida")
@@ -35,7 +35,7 @@ public void nonInlined(Function runLambda()) {
 Pero al implementar el HOF pasándole una lambda
 
 ```kotlin
-inlined {
+nonInlined {
     println("Llamando a la función noninlined")
 }
 ```

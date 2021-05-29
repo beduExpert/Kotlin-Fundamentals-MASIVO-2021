@@ -18,9 +18,9 @@ fun getPromo(price:Double,coupon:String){
     val noIva  = {price:Double ->  price}
     val ranges  = {price:Double ->
         when(price){
-            in 0..1000 -> price*1.12
-            in 1000..2000-> price*1.04
-            in 2000..4000 -> (price*1.16)/2
+            in 0.0..1000.0 -> price * 1.12
+            in 1000.0..2000.0 -> price * 1.04
+            in 2000.0..4000.0 -> (price * 1.16) / 2
             else -> price/3
     } }
     val minus100 = {price:Double ->  price*1.16 - 100 }

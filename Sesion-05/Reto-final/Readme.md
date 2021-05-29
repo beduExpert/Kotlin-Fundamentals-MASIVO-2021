@@ -21,7 +21,7 @@ Aquí damos algunos consejos para empezar a implementar  conceptos de este parad
 
 2. Cada método de una clase puede ser una función de orden superior! si necesitas ejecutar código externo al de un método de una clase después de una operación, pasar una lambda podría ser tu opción.
 
-3. Evita utilizar el *keyword* ***var***, pues indica que la variable es mutable. Una variable mutable puede ser moificada de forma no deseada y por tanto puede producirnos errores. La inmutabilidad también aporta consistencia al estado de una aplicación.
+3. Evita utilizar el *keyword* ***var***, pues indica que la variable es mutable. Una variable mutable puede ser modificada de forma no deseada y por tanto puede producirnos errores. La inmutabilidad también aporta consistencia al estado de una aplicación.
 
 
 </br>
