@@ -49,7 +49,6 @@ Se proponen dos ejercicios:
     Nuestra clase
 
     ```kotlin
-    clase Person
     data class Person(
         val name: String? = null,
         val visitedCities: List<String?>? =null
