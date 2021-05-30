@@ -84,7 +84,8 @@ fun main() = runBlocking {
     try {
         println("Iniciando recuperación de usuario")
         val user = fetchUserCoroutine("DanBedu","K0tlinBedu")
-        updateUser(user)
+//        updateUser(user)
+        println(user)
     } catch (exception: Exception) {
         println("Error: $exception")
     }

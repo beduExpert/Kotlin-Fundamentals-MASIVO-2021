@@ -2,7 +2,7 @@
 
 ## OBJETIVO 
 
-- Reforzar el aprendizaje adquirido en el (Ejemplo 1)[../Ejemplo-01]
+- Reforzar el aprendizaje adquirido en el [Ejemplo 01](../Ejemplo-01)
 - Probar suspensiones y bloqueos en contextos inapropiados
 
 ## REQUISITOS 

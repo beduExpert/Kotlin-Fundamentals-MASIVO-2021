@@ -11,7 +11,7 @@
 
 ## DESARROLLO
 
-Para desarrollar este proyecto, es necesario crear nuestro proyecto tal y como se indica en el inicio de esta (Sesión)[..], donde al final observamos un código de prueba, que es el siguiente:
+Para desarrollar este proyecto, es necesario crear nuestro proyecto tal y como se indica en el inicio de esta [Sesión](../), donde al final observamos un código de prueba, que es el siguiente:
 
 ```kotlin
 import kotlinx.coroutines.GlobalScope

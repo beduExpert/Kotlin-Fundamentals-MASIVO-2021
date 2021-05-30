@@ -26,6 +26,7 @@ fun getInventary(productId:Int):Int{
     delay(2000)
     val stock = (0..99).random()
     println("producto identificado, en stock: $stock")
+    return stock
 }
 ```
 
@@ -64,7 +65,7 @@ y da un resultado similar a esto:
 Bien, para simplificarnos el trabajo, podríamos volver coroutine a nuestra función *main* utilizando el constructor *runBlocking*.
 
 ```kotlin
-fun main() = runBlocking { // this: CoroutineScope
+fun main(): Unit = runBlocking { // this: CoroutineScope
     getInventary(1)
 }
 ```
