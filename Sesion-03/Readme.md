@@ -7,14 +7,14 @@
 
 ## 📂 Organización de la clase
 
-- [Ejemplo 01: Clases y objetos](Ejemplo-01)
-   - [Reto 01](Reto-01)
+- [Ejemplo 01: Clases y objetos ( 15 minutos ) ](Ejemplo-01)
+   - [Reto 01 ( 15 minutos ) ](Reto-01)
 
-- [Ejemplo 02: Constructores](Ejemplo-02)
-   - [Reto 02](Reto-02)
+- [Ejemplo 02: Constructores ( 20 minutos ) ](Ejemplo-02)
+   - [Reto 02 ( 15 minutos ) ](Reto-02)
 
-- [Ejemplo 03: Getters, Setters y modificadores de acceso](Ejemplo-03)
-   - [Reto 03](Reto-03)
+- [Ejemplo 03: Getters, Setters y modificadores de acceso ( 25 minutos ) ](Ejemplo-03)
+   - [Reto 03 ( 20 minutos ) ](Reto-03)
 
 - [Reto final - Añadiendo POO al proyecto](Reto-final)
 

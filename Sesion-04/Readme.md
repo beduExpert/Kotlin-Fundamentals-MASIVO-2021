@@ -7,13 +7,13 @@
 
 ## 📂 Organización de la clase
 
-- [Ejemplo 01: Herencia y polimorfismo](Ejemplo-01)
-	- [Reto 01](Reto-01)
+- [Ejemplo 01: Herencia y polimorfismo ( 25 minutos ) ](Ejemplo-01)
+	- [Reto 01 ( 20 minutos ) ](Reto-01)
 		
-- [Ejemplo 02: Clases abstractas e interfaces](Ejemplo-02)
-	- [Reto 02](Reto-02)
+- [Ejemplo 02: Clases abstractas e interfaces ( 25 minutos ) ](Ejemplo-02)
+	- [Reto 02 ( 25 minutos ) ](Reto-02)
 		
-- [Ejemplo 03: Data class y Companion object](Ejemplo-03)
+- [Ejemplo 03: Data class y Companion object ( 15 minutos ) ](Ejemplo-03)
 
 - [Reto final: puliendo POO en el proyecto](Reto-final)
 
