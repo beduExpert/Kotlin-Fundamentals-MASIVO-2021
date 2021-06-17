@@ -83,7 +83,7 @@ fun printName(name: String){
     println("Mi nombre es $name")
 }
 
-fun printAge(age: Double): Unit{
+fun printAge(age: Int){
     println("Tengo $age años")
 }
 ```
